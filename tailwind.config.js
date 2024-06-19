@@ -10,8 +10,10 @@ export default {
         blackPrimary: '#030712',
         blackSecondary: 'rgba(48, 48, 48, 0.90)',
         whiteSecondary: '#F0F0F0'
-        // ...
-      }
+      },
+      boxShadow: {
+        'custom-white': '0px 4px 10px 0px rgba(255, 255, 255, 0.90)',
+      },
     },
   },
   plugins: [],
