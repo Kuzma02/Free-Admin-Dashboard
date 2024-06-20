@@ -5,3 +5,6 @@ export { default as Stats } from "./Stats";
 export { default as Welcome } from "./Welcome";
 export { default as SingleActivity } from "./SingleActivity";
 export { default as ActivitiesByDevices } from "./ActivitiesByDevices";
+export { default as ActivitiesByCountry } from "./ActivitiesByCountry";
+export { default as ActivityByTime } from "./ActivityByTime";
+export { default as ConversionRateBySource } from "./ConversionRateBySource";
