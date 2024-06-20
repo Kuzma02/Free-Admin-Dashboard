@@ -3,6 +3,7 @@ import SingleActivity from "./SingleActivity"
 import { FaWindows } from "react-icons/fa6";
 import { FaAndroid } from "react-icons/fa6";
 import { FaLinux } from "react-icons/fa6";
+import { FaQuestion } from "react-icons/fa6";
 
 
 
@@ -25,6 +26,9 @@ const Activities = () => {
             </SingleActivity>
             <SingleActivity mainTitle="Mac devices" totalVisitors="1700" totalMoney="$10500" percent="+350%">
             <FaApple className="text-blackPrimary text-3xl" />
+            </SingleActivity>
+            <SingleActivity mainTitle="Other" totalVisitors="1200" totalMoney="$1000" percent="+22%">
+            <FaQuestion className="text-blackPrimary text-3xl" />
             </SingleActivity>
           </div>
         </div>
