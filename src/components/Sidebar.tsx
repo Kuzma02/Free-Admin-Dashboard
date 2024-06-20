@@ -17,7 +17,7 @@ const Sidebar = () => {
   return (
     <>
       {isSidebarOpen && (
-        <div className="w-72 h-full bg-blackPrimary pt-6 xl:relative max-xl:fixed max-xl:top-0">
+        <div className="w-72 h-[100vh] bg-blackPrimary pt-6 xl:relative max-xl:fixed max-xl:top-0">
           <HiOutlineX
             className="text-whiteSecondary text-2xl ml-auto mb-2 cursor-pointer xl:py-3"
             onClick={() => dispatch(setSidebar())}
