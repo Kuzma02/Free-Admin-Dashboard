@@ -11,7 +11,7 @@ const ConversionRateBySource = () => {
       <h4 className="text-2xl text-white font-bold mb-7 max-[440px]:text-left">
         Conversion rate by source
       </h4>
-      <div className="w-full flex flex-col gap-y-4">
+      <div className="w-full flex flex-col gap-y-4 max-[440px]:grid max-[440px]:grid-cols-2 max-[390px]:grid-cols-1">
         <SingleActivity
           mainTitle="SEO"
           totalVisitors="2500"
