@@ -26,7 +26,7 @@ const Sidebar = () => {
         className={`w-72 h-[100vh] bg-blackPrimary pt-6 xl:sticky xl:top-0 xl:z-10 max-xl:fixed max-xl:top-0 max-xl:z-10 xl:translate-x-0 ${sidebarClass}`}
       >
         <HiOutlineX
-          className="text-whiteSecondary text-2xl ml-auto mb-2 cursor-pointer xl:py-3"
+          className="text-whiteSecondary text-2xl ml-auto mb-2 mr-2 cursor-pointer xl:py-3"
           onClick={() => dispatch(setSidebar())}
         />
         <div>

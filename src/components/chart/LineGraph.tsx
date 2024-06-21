@@ -11,8 +11,8 @@ const LineGraph = () => {
     labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
     datasets: [
       {
-        label: "Steps",
-        data: [1000, 2000, 1500, 3000, 2000, 1200, 1500],
+        label: "Traffic",
+        data: [10000, 30000, 15000, 30000, 25000, 19000, 50000],
         borderColor: "rgb(255,255,255)",
       }
     ]

@@ -22,16 +22,18 @@ const BarChart = () => {
   const options = {};
   const data = {
     labels: [
-      "Rent",
-      "Groceries",
-      "Utilities",
-      "Transportation",
-      "Entertainment",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
     ],
     datasets: [
       {
-        label: "Expenses",
-        data: [1200, 300, 150, 180, 100],
+        label: "Order number",
+        data: [120, 300, 150, 180, 100, 200, 300],
         backgroundColor: ["rgb(255,255,255)"],
         borderColor: ["rgb(255,255,255)"],
         borderWidth: 1,
