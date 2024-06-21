@@ -8,3 +8,4 @@ export { default as ActivitiesByDevices } from "./ActivitiesByDevices";
 export { default as ActivitiesByCountry } from "./ActivitiesByCountry";
 export { default as ActivityByTime } from "./ActivityByTime";
 export { default as ConversionRateBySource } from "./ConversionRateBySource";
+export { default as Footer } from "./Footer";
