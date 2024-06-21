@@ -9,7 +9,7 @@ import { FaAsterisk } from "react-icons/fa6";
 const ActivityByTime = () => {
   return (
     <div>
-      <h4 className="text-2xl text-white font-bold mb-7  max-[440px]:text-center">
+      <h4 className="text-2xl text-white font-bold mb-7  max-[440px]:text-left">
         Activity by Time
       </h4>
       <div className="w-full flex flex-col gap-y-4">

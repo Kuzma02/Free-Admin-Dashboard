@@ -8,7 +8,7 @@ import { FaYoutube } from "react-icons/fa6";
 const ConversionRateBySource = () => {
   return (
     <div>
-      <h4 className="text-2xl text-white font-bold mb-7 max-[440px]:text-center">
+      <h4 className="text-2xl text-white font-bold mb-7 max-[440px]:text-left">
         Conversion rate by source
       </h4>
       <div className="w-full flex flex-col gap-y-4">

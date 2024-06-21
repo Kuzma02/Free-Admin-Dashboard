@@ -15,7 +15,7 @@ const SingleActivity = ({
 }: ISingleActivityProps) => {
   return (
     <div>
-      <div className="flex justify-between items-center w-full gap-x-16 max-[440px]:flex-col max-[440px]:gap-1">
+      <div className="flex justify-between items-center w-full gap-x-16 max-[440px]:flex-col max-[440px]:gap-1 max-[440px]:items-start max-[440px]:w-44">
         <div className="flex items-center gap-x-4 max-[440px]:flex-col max-[440px]:gap-1">
           <div className="bg-whiteSecondary flex justify-center items-center w-12 h-12 rounded-lg">
             {children}
@@ -28,9 +28,9 @@ const SingleActivity = ({
           </div>
         </div>
 
-        <div className="flex flex-col gap-y-1 items-center">
-          <p className="text-white font-bold text-xl">{totalMoney}</p>
-          <p className="text-lg text-whiteSecondary font-medium">{percent}</p>
+        <div className="flex flex-col gap-y-1 items-center max-[440px]:w-full">
+          <p className="text-white font-bold text-xl max-[440px]:text-center">{totalMoney}</p>
+          <p className="text-lg text-whiteSecondary font-medium max-[440px]:text-center">{percent}</p>
         </div>
       </div>
     </div>

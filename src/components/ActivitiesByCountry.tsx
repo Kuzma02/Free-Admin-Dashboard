@@ -3,7 +3,7 @@ import SingleActivity from "./SingleActivity";
 const ActivitiesByCountry = () => {
   return (
     <div>
-      <h4 className="text-2xl text-white font-bold mb-7 max-[440px]:text-center">
+      <h4 className="text-2xl text-white font-bold mb-7 max-[440px]:text-left">
         Activity by country
       </h4>
       <div className="w-full flex flex-col gap-y-4">
