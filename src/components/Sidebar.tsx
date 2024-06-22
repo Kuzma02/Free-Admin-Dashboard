@@ -9,7 +9,7 @@ import { useAppDispatch, useAppSelector } from "../hooks";
 import { HiOutlineX } from "react-icons/hi";
 import { setSidebar } from "../features/dashboard/dashboardSlice";
 import { HiOutlineUser } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   const { isSidebarOpen } = useAppSelector((state) => state.dashboard);
@@ -19,6 +19,11 @@ const Sidebar = () => {
   const sidebarClass: string = isSidebarOpen
     ? "sidebar-open"
     : "sidebar-closed";
+
+  const navActiveClass: string =
+    "block bg-whiteSecondary flex items-center self-stretch gap-4 py-4 px-6 cursor-pointer max-xl:py-3 text-blackPrimary ";
+  const navInactiveClass: string =
+    "block flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3 text-whiteSecondary";
 
   return (
     <div className="relative">
@@ -30,34 +35,60 @@ const Sidebar = () => {
           onClick={() => dispatch(setSidebar())}
         />
         <div>
-          <Link to="/">
-          <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-whiteSecondary cursor-pointer max-xl:py-3">
-            <HiOutlineHome className="text-blackPrimary text-xl" />
-            <span className="text-blackPrimary text-lg">Overview</span>
-          </div>
-          </Link>
-          <Link to="/products">
-            <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
-              <HiOutlineDevicePhoneMobile className="text-whiteSecondary text-xl" />
-              <span className="text-whiteSecondary text-lg">Products</span>
-            </div>
-          </Link>
-          <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
-            <HiOutlineTag className="text-whiteSecondary text-xl" />
-            <span className="text-whiteSecondary text-lg">Categories</span>
-          </div>
-          <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
-            <HiOutlineTruck className="text-whiteSecondary text-xl" />
-            <span className="text-whiteSecondary text-lg">Orders</span>
-          </div>
-          <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
-            <HiOutlineUser className="text-whiteSecondary text-xl" />
-            <span className="text-whiteSecondary text-lg">Users</span>
-          </div>
-          <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
-            <HiOutlineStar className="text-whiteSecondary text-xl" />
-            <span className="text-whiteSecondary text-lg">Reviews</span>
-          </div>
+          <NavLink
+            to="/"
+            className={(isActiveObj) =>
+              isActiveObj.isActive ? navActiveClass : navInactiveClass
+            }
+          >
+            <HiOutlineHome className="text-xl" />
+            <span className="text-lg">Overview</span>
+          </NavLink>
+          <NavLink
+            to="/products"
+            className={(isActiveObj) =>
+              isActiveObj.isActive ? navActiveClass : navInactiveClass
+            }
+          >
+            <HiOutlineDevicePhoneMobile className="text-xl" />
+            <span className="text-lg">Products</span>
+          </NavLink>
+          <NavLink
+            to="/categories"
+            className={(isActiveObj) =>
+              isActiveObj.isActive ? navActiveClass : navInactiveClass
+            }
+          >
+            <HiOutlineTag className="text-xl" />
+            <span className="text-lg">Categories</span>
+          </NavLink>
+          <NavLink
+            to="/orders"
+            className={(isActiveObj) =>
+              isActiveObj.isActive ? navActiveClass : navInactiveClass
+            }
+          >
+            <HiOutlineTruck className="text-xl" />
+            <span className="text-lg">Orders</span>
+          </NavLink>
+          <NavLink
+            to="/users"
+            className={(isActiveObj) =>
+              isActiveObj.isActive ? navActiveClass : navInactiveClass
+            }
+          >
+            <HiOutlineUser className="text-xl" />
+            <span className="text-lg">Users</span>
+          </NavLink>
+          <NavLink
+            to="/reviews"
+            className={(isActiveObj) =>
+              isActiveObj.isActive ? navActiveClass : navInactiveClass
+            }
+          >
+            <HiOutlineStar className="text-xl" />
+            <span className="text-lg">Reviews</span>
+          </NavLink>
         </div>
 
         <div className="absolute bottom-0 border-1 border-t border-blackSecondary w-full">
