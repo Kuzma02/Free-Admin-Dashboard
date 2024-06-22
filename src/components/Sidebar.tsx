@@ -1,7 +1,5 @@
 import { HiOutlineHome } from "react-icons/hi";
-import { HiOutlineChartPie } from "react-icons/hi";
 import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
-import { IoCartOutline } from "react-icons/io5";
 import { HiOutlineTag } from "react-icons/hi";
 import { HiOutlineTruck } from "react-icons/hi";
 import { HiOutlineStar } from "react-icons/hi";
@@ -10,6 +8,8 @@ import { HiOutlineChat } from "react-icons/hi";
 import { useAppDispatch, useAppSelector } from "../hooks";
 import { HiOutlineX } from "react-icons/hi";
 import { setSidebar } from "../features/dashboard/dashboardSlice";
+import { HiOutlineUser } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const { isSidebarOpen } = useAppSelector((state) => state.dashboard);
@@ -30,22 +30,18 @@ const Sidebar = () => {
           onClick={() => dispatch(setSidebar())}
         />
         <div>
+          <Link to="/">
           <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-whiteSecondary cursor-pointer max-xl:py-3">
             <HiOutlineHome className="text-blackPrimary text-xl" />
             <span className="text-blackPrimary text-lg">Overview</span>
           </div>
-          <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
-            <IoCartOutline className="text-whiteSecondary text-xl" />
-            <span className="text-whiteSecondary text-lg">E-Commerce</span>
-          </div>
-          <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
-            <HiOutlineChartPie className="text-whiteSecondary text-xl" />
-            <span className="text-whiteSecondary text-lg">Analytics</span>
-          </div>
-          <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
-            <HiOutlineDevicePhoneMobile className="text-whiteSecondary text-xl" />
-            <span className="text-whiteSecondary text-lg">Products</span>
-          </div>
+          </Link>
+          <Link to="/products">
+            <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
+              <HiOutlineDevicePhoneMobile className="text-whiteSecondary text-xl" />
+              <span className="text-whiteSecondary text-lg">Products</span>
+            </div>
+          </Link>
           <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
             <HiOutlineTag className="text-whiteSecondary text-xl" />
             <span className="text-whiteSecondary text-lg">Categories</span>
@@ -53,6 +49,10 @@ const Sidebar = () => {
           <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
             <HiOutlineTruck className="text-whiteSecondary text-xl" />
             <span className="text-whiteSecondary text-lg">Orders</span>
+          </div>
+          <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
+            <HiOutlineUser className="text-whiteSecondary text-xl" />
+            <span className="text-whiteSecondary text-lg">Users</span>
           </div>
           <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
             <HiOutlineStar className="text-whiteSecondary text-xl" />

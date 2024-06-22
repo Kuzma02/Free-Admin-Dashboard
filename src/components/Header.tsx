@@ -5,6 +5,7 @@ import { HiOutlineBell } from "react-icons/hi";
 import { HiOutlineMenu } from "react-icons/hi";
 import { useAppDispatch } from "../hooks";
 import { setSidebar } from "../features/dashboard/dashboardSlice";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -13,9 +14,9 @@ const Header = () => {
     <header className="bg-blackPrimary relative">
       <div className="flex justify-between items-center px-9 py-5 max-xl:flex-col max-xl:gap-y-7 max-[400px]:px-4">
       <HiOutlineMenu className="text-2xl text-white absolute bottom-7 left-5 xl:hidden max-sm:static max-sm:order-1 cursor-pointer" onClick={() => dispatch(setSidebar())} />
-        <div>
+        <Link to="/">
           <FaReact className="text-4xl text-white hover:rotate-180 hover:duration-1000 hover:ease-in-out cursor-pointer" />
-        </div>
+        </Link>
         <div className="relative max-sm:w-full">
           <HiOutlineSearch className="text-white absolute top-4 left-3 text-xl text-gray-400" />
           <input
