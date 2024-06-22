@@ -20,19 +20,19 @@ const Landing = () => {
             <Stats />
           </div>
           <div className="sm:w-[66%] mt-10 max-sm:w-[80%]">
-            <h3 className="text-3xl text-white font-bold mb-7 max-sm:text-2xl">
+            <h3 className="text-3xl text-whiteSecondary font-bold mb-7 max-sm:text-2xl">
               Traffic Overview
             </h3>
             <LineGraph />
           </div>
           <div className="sm:w-[66%] mt-10 max-sm:w-[80%]">
-            <h3 className="text-3xl text-white font-bold mb-7 max-sm:text-2xl">
+            <h3 className="text-3xl text-whiteSecondary font-bold mb-7 max-sm:text-2xl">
               Orders Overview
             </h3>
             <BarChart />
           </div>
           <div className="sm:w-[50%] mt-10 max-sm:w-[70%]">
-            <h3 className="text-3xl text-white font-bold mb-7 max-sm:text-2xl">
+            <h3 className="text-3xl text-whiteSecondary font-bold mb-7 max-sm:text-2xl">
               Source Overview
             </h3>
             <PieChart />
