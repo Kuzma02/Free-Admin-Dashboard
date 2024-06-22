@@ -11,3 +11,5 @@ export { default as ConversionRateBySource } from "./ConversionRateBySource";
 export { default as Footer } from "./Footer";
 export { default as ProductTable } from "./ProductTable";
 export { default as SearchInput } from "./SearchInput";
+export { default as RowsPerPage } from "./RowsPerPage";
+export { default as Pagination } from "./Pagination";
