@@ -197,7 +197,7 @@ const CategoryTable = () => {
             </td>
             <td className="py-4 pl-0 pr-4 table-cell pr-8">
               <div className="flex gap-x-3">
-                <div className="font-mono text-sm leading-6 text-whiteSecondary">
+                <div className="text-sm leading-6 text-whiteSecondary">
                   {item.slug}
                 </div>
               </div>
