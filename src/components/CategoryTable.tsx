@@ -168,7 +168,7 @@ const CategoryTable = () => {
             </th>
             <th
               scope="col"
-              className="py-2 pl-0 pr-4 text-right font-semibold sm:pr-8 sm:text-left lg:pr-20"
+              className="py-2 pl-0 pr-8 font-semibold table-cell"
             >
               Number of products
             </th>
