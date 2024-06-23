@@ -144,7 +144,7 @@ const activityItems = [
 
 const CategoryTable = () => {
   return (
-    <table className="mt-6 w-full whitespace-nowrap text-left">
+    <table className="mt-6 w-full whitespace-nowrap text-left max-lg:block max-lg:overflow-x-scroll">
         <colgroup>
           <col className="w-full sm:w-4/12" />
           <col className="lg:w-4/12" />
@@ -162,7 +162,7 @@ const CategoryTable = () => {
             </th>
             <th
               scope="col"
-              className="hidden py-2 pl-0 pr-8 font-semibold sm:table-cell"
+              className="py-2 pl-0 pr-8 font-semibold table-cell"
             >
               Slug
             </th>
@@ -174,13 +174,13 @@ const CategoryTable = () => {
             </th>
             <th
               scope="col"
-              className="hidden py-2 pl-0 pr-8 font-semibold md:table-cell lg:pr-20"
+              className="py-2 pl-0 pr-8 font-semibold table-cell lg:pr-20"
             >
               Parent category
             </th>
             <th
               scope="col"
-              className="hidden py-2 pl-0 pr-4 text-right font-semibold sm:table-cell sm:pr-6 lg:pr-8"
+              className="py-2 pl-0 pr-4 text-right font-semibold table-cell sm:pr-6 lg:pr-8"
             >
               Actions
             </th>
@@ -201,7 +201,7 @@ const CategoryTable = () => {
                   </div>
                 </div>
               </td>
-              <td className="hidden py-4 pl-0 pr-4 sm:table-cell sm:pr-8">
+              <td className="py-4 pl-0 pr-4 table-cell pr-8">
                 <div className="flex gap-x-3">
                   <div className="font-mono text-sm leading-6 text-whiteSecondary">
                     {item.slug}
@@ -209,22 +209,22 @@ const CategoryTable = () => {
                 </div>
               </td>
               <td className="py-4 pl-0 pr-4 text-sm leading-6 sm:pr-8 lg:pr-20">
-                <div className="flex items-center justify-end gap-x-2 sm:justify-start">
+                <div className="flex items-center gap-x-2 justify-start">
                   <div
                     className="flex-none rounded-full p-1"
                     
                   >
                     <div className="h-1.5 w-1.5 rounded-full bg-current" />
                   </div>
-                  <div className="hidden text-whiteSecondary sm:block">
+                  <div className="text-whiteSecondary block">
                     {item.productsNumber}
                   </div>
                 </div>
               </td>
-              <td className="hidden py-4 pl-0 pr-8 text-sm leading-6 text-whiteSecondary md:table-cell lg:pr-20">
+              <td className="py-4 pl-0 pr-8 text-sm leading-6 text-whiteSecondary table-cell lg:pr-20">
                 {item.parentCategory}
               </td>
-              <td className="hidden py-4 pl-0 pr-4 text-right text-sm leading-6 text-whiteSecondary sm:table-cell sm:pr-6 lg:pr-8">
+              <td className="py-4 pl-0 pr-4 text-right text-sm leading-6 text-whiteSecondary table-cell pr-6 lg:pr-8">
                 <div className="flex gap-x-1 justify-end">
                   <Link
                     to="#"
