@@ -16,3 +16,4 @@ export { default as Pagination } from "./Pagination";
 export { default as CategoryTable } from "./CategoryTable";
 export { default as OrderTable } from "./OrderTable";
 export { default as UserTable } from "./UserTable";
+export { default as ReviewsTable } from "./ReviewsTable";
