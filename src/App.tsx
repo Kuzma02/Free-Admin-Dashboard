@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import {
   Categories,
+  CreateProduct,
   HomeLayout,
   Landing,
   Orders,
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element: <Products />,
+      },
+      {
+        path: "/products/add-product",
+        element: <CreateProduct />,
       },
       {
         path: "/categories",
