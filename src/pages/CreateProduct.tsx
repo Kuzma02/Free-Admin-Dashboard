@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { AiOutlineSave } from "react-icons/ai";
 import { HiOutlineUpload } from "react-icons/hi";
 
-
 const CreateProduct = () => {
   return (
     <div className="h-auto border-t border-blackSecondary border-1 flex">
@@ -83,31 +82,38 @@ const CreateProduct = () => {
               <h3 className="text-2xl font-bold leading-7 text-whiteSecondary">
                 Product images
               </h3>
-              <button className="text-blackPrimary bg-whiteSecondary w-full py-2 text-lg hover:bg-white duration-200 flex items-center justify-center gap-x-2 mt-4 mb-4">
-                <HiOutlineUpload className="text-blackPrimary text-2xl" />
-                <span className="text-blackPrimary font-semibold">
-                  Upload product images
-                </span>
-              </button>
-              <div>
-                <img
-                  src="/src/assets/phone product.jpg"
-                  className="w-full border border-gray-700 hover:border-gray-600 cursor-pointer"
-                />
-                <div className="mt-1 flex gap-1 flex-wrap">
-                  <img
-                    src="/src/assets/phone product 1.jpg"
-                    className="w-56 border border-gray-700 hover:border-gray-600 cursor-pointer"
-                  />
-                  <img
-                    src="/src/assets/phone product 2.jpg"
-                    className="w-56 border border-gray-700 hover:border-gray-600 cursor-pointer"
-                  />
-                  <img
-                    src="/src/assets/phone product 3.jpg"
-                    className="w-56 border border-gray-700 hover:border-gray-600 cursor-pointer"
-                  />
-                </div>
+
+              <div className="flex items-center justify-center w-full mt-5">
+                <label
+                  htmlFor="dropzone-file"
+                  className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-700 border-dashed rounded-lg cursor-pointer bg-blackPrimary  hover:border-gray-600"
+                >
+                  <div className="flex flex-col items-center justify-center pt-5 pb-6">
+                    <svg
+                      className="w-8 h-8 mb-4 text-whiteSecondary dark:text-gray-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 20 16"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+                      />
+                    </svg>
+                    <p className="mb-2 text-sm text-whiteSecondary dark:text-gray-400">
+                      <span className="font-semibold">Click to upload</span> or drag
+                      and drop
+                    </p>
+                    <p className="text-xs text-whiteSecondary">
+                      SVG, PNG, JPG or GIF (MAX. 800x400px)
+                    </p>
+                  </div>
+                  <input id="dropzone-file" type="file" className="hidden" />
+                </label>
               </div>
             </div>
           </div>
