@@ -1,8 +1,11 @@
-import { Sidebar } from "../components";
+import { ImageUpload, InputWithLabel, Sidebar } from "../components";
 import { HiOutlineSave } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { AiOutlineSave } from "react-icons/ai";
-import { HiOutlineUpload } from "react-icons/hi";
+import TextInput from "../components/TextInput";
+import TextAreaInput from "../components/TextAreaInput";
+import SelectInput from "../components/SelectInput";
+import { selectList } from "../utils/data";
 
 const CreateProduct = () => {
   return (
@@ -44,36 +47,24 @@ const CreateProduct = () => {
               </h3>
 
               <div className="mt-4 flex flex-col gap-5">
-                <div>
-                  <label
-                    htmlFor="product-name"
-                    className="text-whiteSecondary block text-base font-semibold mb-1"
-                  >
-                    Title
-                  </label>
-                  <input
+                <InputWithLabel label="Title">
+                  <TextInput
                     type="text"
-                    className="bg-blackPrimary text-whiteSecondary w-full h-10 indent-2 outline-none border-gray-700 border focus:border-gray-600 hover:border-gray-600"
-                    id="product-name"
                     placeholder="Enter a product title..."
                   />
-                </div>
+                </InputWithLabel>
 
-                <div>
-                  <label
-                    htmlFor="product-description"
-                    className="text-whiteSecondary block text-base font-semibold mb-1"
-                  >
-                    Description
-                  </label>
-                  <textarea
-                    id="product-description"
+                <InputWithLabel label="Description">
+                  <TextAreaInput
+                    placeholder="Enter a product description..."
                     rows={4}
                     cols={50}
-                    className="bg-blackPrimary text-whiteSecondary w-full h-40 indent-2 outline-none border-gray-700 border focus:border-gray-600 hover:border-gray-600 py-2"
-                    placeholder="Enter a product description..."
-                  ></textarea>
-                </div>
+                  />
+                </InputWithLabel>
+
+                <InputWithLabel label="Category">
+                  <SelectInput selectList={selectList} />
+                </InputWithLabel>
               </div>
             </div>
 
@@ -83,38 +74,7 @@ const CreateProduct = () => {
                 Product images
               </h3>
 
-              <div className="flex items-center justify-center w-full mt-5">
-                <label
-                  htmlFor="dropzone-file"
-                  className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-700 border-dashed rounded-lg cursor-pointer bg-blackPrimary  hover:border-gray-600"
-                >
-                  <div className="flex flex-col items-center justify-center pt-5 pb-6">
-                    <svg
-                      className="w-8 h-8 mb-4 text-whiteSecondary dark:text-gray-400"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 20 16"
-                    >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
-                      />
-                    </svg>
-                    <p className="mb-2 text-sm text-whiteSecondary dark:text-gray-400">
-                      <span className="font-semibold">Click to upload</span> or drag
-                      and drop
-                    </p>
-                    <p className="text-xs text-whiteSecondary">
-                      SVG, PNG, JPG or GIF (MAX. 800x400px)
-                    </p>
-                  </div>
-                  <input id="dropzone-file" type="file" className="hidden" />
-                </label>
-              </div>
+              <ImageUpload />
             </div>
           </div>
         </div>

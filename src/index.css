@@ -17,3 +17,11 @@ body{
     transform: translateX(0);
     transition: transform 0.3s ease-in;
   }
+
+  .ql-snow .ql-stroke {
+    stroke: #F0F0F0;
+  }
+
+  .ql-snow .ql-picker-label::before {
+    color: #F0F0F0;
+  }

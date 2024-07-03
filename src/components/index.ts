@@ -17,3 +17,7 @@ export { default as CategoryTable } from "./CategoryTable";
 export { default as OrderTable } from "./OrderTable";
 export { default as UserTable } from "./UserTable";
 export { default as ReviewsTable } from "./ReviewsTable";
+export { default as InputWithLabel } from "./InputWithLabel";
+export { default as TextInput } from "./TextInput";
+export { default as TextAreaInput } from "./TextAreaInput";
+export { default as ImageUpload } from "./ImageUpload";
