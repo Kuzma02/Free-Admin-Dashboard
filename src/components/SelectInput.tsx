@@ -1,3 +1,5 @@
+import { nanoid } from "nanoid";
+
 interface TextAreaProps extends React.InputHTMLAttributes<HTMLSelectElement> {
   selectList: { value: string; label: string }[];
 }
@@ -9,7 +11,7 @@ const SelectInput: React.FC<TextAreaProps> = (props) => {
         props?.selectList.map((item: { value: string; label: string }) => {
           const { value, label } = item;
 
-          return <option value={value}>{label}</option>;
+          return <option key={nanoid()} value={value}>{label}</option>;
         })}
     </select>
   );

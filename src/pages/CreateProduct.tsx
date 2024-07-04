@@ -66,6 +66,44 @@ const CreateProduct = () => {
                   <SelectInput selectList={selectList} />
                 </InputWithLabel>
               </div>
+
+              <h3 className="text-2xl font-bold leading-7 text-whiteSecondary mt-16">
+                Pricing & Inventory
+              </h3>
+
+              <div className="mt-4 flex flex-col gap-5">
+                <div className="grid grid-cols-2 gap-x-5 max-[500px]:grid-cols-1 max-[500px]:gap-x-0 max-[500px]:gap-y-5">
+                  <InputWithLabel label="Base pricing">
+                    <TextInput
+                      type="number"
+                      placeholder="Enter a product base pricing..."
+                    />
+                  </InputWithLabel>
+
+                  <InputWithLabel label="Stock">
+                    <TextInput
+                      type="number"
+                      placeholder="Enter a product stock..."
+                    />
+                  </InputWithLabel>
+                </div>
+
+                <div className="grid grid-cols-2 gap-x-5 max-[500px]:grid-cols-1 max-[500px]:gap-x-0 max-[500px]:gap-y-5">
+                  <InputWithLabel label="Discount">
+                    <TextInput
+                      type="number"
+                      placeholder="Enter a product discount..."
+                    />
+                  </InputWithLabel>
+
+                  <InputWithLabel label="SKU">
+                    <TextInput
+                      type="text"
+                      placeholder="Enter a product SKU..."
+                    />
+                  </InputWithLabel>
+                </div>
+              </div>
             </div>
 
             {/* right div */}
