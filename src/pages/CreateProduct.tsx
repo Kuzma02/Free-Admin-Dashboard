@@ -5,7 +5,7 @@ import { AiOutlineSave } from "react-icons/ai";
 import SimpleInput from "../components/SimpleInput";
 import TextAreaInput from "../components/TextAreaInput";
 import SelectInput from "../components/SelectInput";
-import { selectList } from "../utils/data";
+import { selectList, stockStatusList } from "../utils/data";
 
 const CreateProduct = () => {
   return (
@@ -80,19 +80,19 @@ const CreateProduct = () => {
                     />
                   </InputWithLabel>
 
-                  <InputWithLabel label="Stock">
+                  <InputWithLabel label="Price with dicount">
                     <SimpleInput
                       type="number"
-                      placeholder="Enter a product stock..."
+                      placeholder="Enter a price with discount..."
                     />
                   </InputWithLabel>
                 </div>
 
                 <div className="grid grid-cols-2 gap-x-5 max-[500px]:grid-cols-1 max-[500px]:gap-x-0 max-[500px]:gap-y-5">
-                  <InputWithLabel label="Discount">
+                  <InputWithLabel label="Stock">
                     <SimpleInput
                       type="number"
-                      placeholder="Enter a product discount..."
+                      placeholder="Enter a product stock..."
                     />
                   </InputWithLabel>
 
@@ -100,6 +100,42 @@ const CreateProduct = () => {
                     <SimpleInput
                       type="text"
                       placeholder="Enter a product SKU..."
+                    />
+                  </InputWithLabel>
+                </div>
+                <InputWithLabel label="Stock status">
+                  <SelectInput selectList={stockStatusList} />
+                </InputWithLabel>
+              </div>
+
+              <h3 className="text-2xl font-bold leading-7 text-whiteSecondary mt-16">
+                Delivery
+              </h3>
+
+              <div className="mt-4 flex flex-col gap-5">
+                <div className="grid grid-cols-2 gap-x-5 gap-y-5 max-[500px]:grid-cols-1 max-[500px]:gap-x-0 max-[500px]:gap-y-5">
+                  <InputWithLabel label="Weight (kg)">
+                    <SimpleInput
+                      type="number"
+                      placeholder="Enter a product weight..."
+                    />
+                  </InputWithLabel>
+                  <InputWithLabel label="Length (cm)">
+                    <SimpleInput
+                      type="number"
+                      placeholder="Enter a product length..."
+                    />
+                  </InputWithLabel>
+                  <InputWithLabel label="Width (cm)">
+                    <SimpleInput
+                      type="number"
+                      placeholder="Enter a product width..."
+                    />
+                  </InputWithLabel>
+                  <InputWithLabel label="Height (cm)">
+                    <SimpleInput
+                      type="number"
+                      placeholder="Enter a product height..."
                     />
                   </InputWithLabel>
                 </div>

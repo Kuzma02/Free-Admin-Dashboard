@@ -20,3 +20,15 @@ export const selectList = [
     value: "iphone",
   },
 ];
+
+export const stockStatusList = [
+  {
+    label: "In stock",
+    value: "in-stock",
+  },
+  {
+    label: "Out of stock",
+    value: "out-of-stock",
+  },
+
+]
