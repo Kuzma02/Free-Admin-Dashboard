@@ -2,7 +2,7 @@ import { ImageUpload, InputWithLabel, Sidebar } from "../components";
 import { HiOutlineSave } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { AiOutlineSave } from "react-icons/ai";
-import TextInput from "../components/TextInput";
+import SimpleInput from "../components/SimpleInput";
 import TextAreaInput from "../components/TextAreaInput";
 import SelectInput from "../components/SelectInput";
 import { selectList } from "../utils/data";
@@ -48,7 +48,7 @@ const CreateProduct = () => {
 
               <div className="mt-4 flex flex-col gap-5">
                 <InputWithLabel label="Title">
-                  <TextInput
+                  <SimpleInput
                     type="text"
                     placeholder="Enter a product title..."
                   />
@@ -74,14 +74,14 @@ const CreateProduct = () => {
               <div className="mt-4 flex flex-col gap-5">
                 <div className="grid grid-cols-2 gap-x-5 max-[500px]:grid-cols-1 max-[500px]:gap-x-0 max-[500px]:gap-y-5">
                   <InputWithLabel label="Base pricing">
-                    <TextInput
+                    <SimpleInput
                       type="number"
                       placeholder="Enter a product base pricing..."
                     />
                   </InputWithLabel>
 
                   <InputWithLabel label="Stock">
-                    <TextInput
+                    <SimpleInput
                       type="number"
                       placeholder="Enter a product stock..."
                     />
@@ -90,14 +90,14 @@ const CreateProduct = () => {
 
                 <div className="grid grid-cols-2 gap-x-5 max-[500px]:grid-cols-1 max-[500px]:gap-x-0 max-[500px]:gap-y-5">
                   <InputWithLabel label="Discount">
-                    <TextInput
+                    <SimpleInput
                       type="number"
                       placeholder="Enter a product discount..."
                     />
                   </InputWithLabel>
 
                   <InputWithLabel label="SKU">
-                    <TextInput
+                    <SimpleInput
                       type="text"
                       placeholder="Enter a product SKU..."
                     />

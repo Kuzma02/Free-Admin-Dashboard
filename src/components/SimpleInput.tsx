@@ -1,9 +1,9 @@
-interface TextInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface SimpleInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
     placeholder?: string;
     type?: string;
 }
 
-const TextInput: React.FC<TextInputProps> = (props) => {
+const SimpleInput: React.FC<SimpleInputProps> = (props) => {
   return (
     <input
       {...props}
@@ -11,4 +11,4 @@ const TextInput: React.FC<TextInputProps> = (props) => {
     />
   );
 };
-export default TextInput;
+export default SimpleInput;
