@@ -4,6 +4,7 @@ import {
   CreateCategory,
   CreateOrder,
   CreateProduct,
+  CreateUser,
   HomeLayout,
   Landing,
   Orders,
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "/users",
         element: <Users />,
+      },
+      {
+        path: "/users/create-user",
+        element: <CreateUser />,
       },
 
     ],

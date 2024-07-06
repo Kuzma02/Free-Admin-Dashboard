@@ -176,7 +176,7 @@ const UserTable = () => {
             User
           </th>
           <th scope="col" className="py-2 pl-0 pr-8 font-semibold table-cell">
-            Email adress
+            Email address
           </th>
           <th scope="col" className="py-2 pl-0 pr-8 font-semibold table-cell">
             Role

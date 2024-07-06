@@ -1,6 +1,5 @@
 import { AiOutlineSave } from "react-icons/ai";
-import { HiCheck, HiOutlineSave } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { HiOutlineSave } from "react-icons/hi";
 import {
   InputWithLabel,
   Sidebar,

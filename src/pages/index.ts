@@ -8,3 +8,4 @@ export { default as Reviews } from "./Reviews";
 export { default as CreateProduct } from "./CreateProduct";
 export { default as CreateCategory } from "./CreateCategory";
 export { default as CreateOrder } from "./CreateOrder";
+export { default as CreateUser } from "./CreateUser";
