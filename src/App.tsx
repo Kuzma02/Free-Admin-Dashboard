@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import {
   Categories,
   CreateCategory,
+  CreateOrder,
   CreateProduct,
   HomeLayout,
   Landing,
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/orders",
         element: <Orders />,
+      },
+      {
+        path: "/orders/create-order",
+        element: <CreateOrder />,
       },
       {
         path: "/reviews",

@@ -4,6 +4,7 @@ import { HiOutlinePlus } from "react-icons/hi";
 import { HiOutlineChevronRight } from "react-icons/hi";
 import { AiOutlineExport } from "react-icons/ai";
 import { HiOutlineSearch } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Orders = () => {
   return (
@@ -27,12 +28,12 @@ const Orders = () => {
                 <AiOutlineExport className="text-whiteSecondary text-base" />
                 <span className="text-whiteSecondary font-medium">Export</span>
               </button>
-              <button className="bg-whiteSecondary w-48 py-2 text-lg hover:bg-white duration-200 flex items-center justify-center gap-x-1">
+              <Link to="/orders/create-order" className="bg-whiteSecondary w-48 py-2 text-lg hover:bg-white duration-200 flex items-center justify-center gap-x-1">
                 <HiOutlinePlus className="text-blackPrimary" />
                 <span className="text-blackPrimary font-semibold">
                   Add an order
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
           <div className="px-4 sm:px-6 lg:px-8 flex justify-between items-center mt-5 max-sm:flex-col max-sm:gap-2">

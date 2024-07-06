@@ -21,3 +21,4 @@ export { default as InputWithLabel } from "./InputWithLabel";
 export { default as SimpleInput } from "./SimpleInput";
 export { default as TextAreaInput } from "./TextAreaInput";
 export { default as ImageUpload } from "./ImageUpload";
+export { default as WhiteButton } from "./WhiteButton";
