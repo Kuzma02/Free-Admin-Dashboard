@@ -32,7 +32,7 @@ const CreateProduct = () => {
               >
                 <HiOutlineSave className="text-blackPrimary text-xl" />
                 <span className="text-blackPrimary font-semibold">
-                  Publish now
+                  Publish product
                 </span>
               </Link>
             </div>

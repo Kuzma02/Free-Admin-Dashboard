@@ -44,3 +44,15 @@ export const roles = [
   },
 
 ]
+
+export const products = [
+  {
+    label: "Product 1",
+    value: "product1",
+  },
+  {
+    label: "Product 2",
+    value: "product2",
+  },
+
+]

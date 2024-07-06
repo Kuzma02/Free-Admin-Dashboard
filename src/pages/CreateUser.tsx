@@ -5,7 +5,6 @@ import {
   InputWithLabel,
   Sidebar,
   SimpleInput,
-  TextAreaInput,
   WhiteButton,
 } from "../components";
 import SelectInput from "../components/SelectInput";
@@ -31,11 +30,11 @@ const CreateUser = () => {
                 </span>
               </button>
               <WhiteButton
-                link="/orders/add-order"
+                link="/users/create-user"
                 textSize="lg"
                 width="48"
                 py="2"
-                text="Publish now"
+                text="Publish user"
               >
                 <HiOutlineSave className="text-blackPrimary text-xl" />
               </WhiteButton>

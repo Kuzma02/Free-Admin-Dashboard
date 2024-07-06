@@ -3,7 +3,13 @@ import {
   HiOutlinePlus,
   HiOutlineSearch,
 } from "react-icons/hi";
-import { Pagination, ReviewsTable, RowsPerPage, Sidebar } from "../components";
+import {
+  Pagination,
+  ReviewsTable,
+  RowsPerPage,
+  Sidebar,
+  WhiteButton,
+} from "../components";
 import { AiOutlineExport } from "react-icons/ai";
 
 const Reviews = () => {
@@ -28,12 +34,15 @@ const Reviews = () => {
                 <AiOutlineExport className="text-whiteSecondary text-base" />
                 <span className="text-whiteSecondary font-medium">Export</span>
               </button>
-              <button className="bg-whiteSecondary w-48 py-2 text-lg hover:bg-white duration-200 flex items-center justify-center gap-x-1">
+              <WhiteButton
+                link="/reviews/create-review"
+                text="Add a review"
+                textSize="lg"
+                py="2"
+                width="48"
+              >
                 <HiOutlinePlus className="text-blackPrimary" />
-                <span className="text-blackPrimary font-semibold">
-                  Add a review
-                </span>
-              </button>
+              </WhiteButton>
             </div>
           </div>
           <div className="px-4 sm:px-6 lg:px-8 flex justify-between items-center mt-5 max-sm:flex-col max-sm:gap-2">

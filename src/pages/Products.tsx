@@ -1,4 +1,4 @@
-import { Pagination, ProductTable, RowsPerPage, Sidebar } from "../components";
+import { Pagination, ProductTable, RowsPerPage, Sidebar, WhiteButton } from "../components";
 import { HiOutlinePlus } from "react-icons/hi";
 import { HiOutlineChevronRight } from "react-icons/hi";
 import { AiOutlineExport } from "react-icons/ai";
@@ -27,12 +27,7 @@ const Products = () => {
                 <AiOutlineExport className="text-whiteSecondary text-base" />
                 <span className="text-whiteSecondary font-medium">Export</span>
               </button>
-              <Link to="/products/add-product" className="bg-whiteSecondary w-48 py-2 text-lg hover:bg-white duration-200 flex items-center justify-center gap-x-1">
-                <HiOutlinePlus className="text-blackPrimary" />
-                <span className="text-blackPrimary font-semibold">
-                  Add a product
-                </span>
-              </Link>
+              <WhiteButton link="/products/create-product" text="Add a product" textSize="lg" py="2" width="48"><HiOutlinePlus className="text-blackPrimary" /></WhiteButton>
             </div>
           </div>
           <div className="px-4 sm:px-6 lg:px-8 flex justify-between items-center mt-5 max-sm:flex-col max-sm:gap-2">

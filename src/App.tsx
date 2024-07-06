@@ -4,6 +4,7 @@ import {
   CreateCategory,
   CreateOrder,
   CreateProduct,
+  CreateReview,
   CreateUser,
   HomeLayout,
   Landing,
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
         element: <Products />,
       },
       {
-        path: "/products/add-product",
+        path: "/products/create-product",
         element: <CreateProduct />,
       },
       {
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
         element: <Categories />,
       },
       {
-        path: "/categories/add-category",
+        path: "/categories/create-category",
         element: <CreateCategory />,
       },
       {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/reviews",
         element: <Reviews />,
+      },
+      {
+        path: "/reviews/create-review",
+        element: <CreateReview />,
       },
       {
         path: "/users",

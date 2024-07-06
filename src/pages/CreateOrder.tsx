@@ -32,19 +32,10 @@ const CreateOrder = () => {
                 textSize="lg"
                 width="48"
                 py="2"
-                text="Publish now"
+                text="Publish order"
               >
                 <HiOutlineSave className="text-blackPrimary text-xl" />
               </WhiteButton>
-              {/* <Link
-                to="/orders/add-order"
-                className="bg-whiteSecondary w-48 py-2 text-lg hover:bg-white duration-200 flex items-center justify-center gap-x-2"
-              >
-                <HiOutlineSave className="text-blackPrimary text-xl" />
-                <span className="text-blackPrimary font-semibold">
-                  Publish now
-                </span>
-              </Link> */}
             </div>
           </div>
 
