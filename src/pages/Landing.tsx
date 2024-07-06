@@ -16,7 +16,16 @@ const Landing = () => {
       <div className="bg-blackPrimary w-full pt-6 pl-9 max-sm:pt-6 max-sm:pl-5 flex max-[1700px]:flex-wrap gap-x-10 max-[400px]:pl-2">
         <div>
           <div>
-            <Welcome />
+            <Welcome>
+              <Welcome.Title>Good evening, Sherwood 😀</Welcome.Title>
+              <Welcome.Description>
+                Here is the complete overview of your eCommerce store. Analyze
+                the statistics and make smart decisions.
+              </Welcome.Description>
+              <Welcome.ActionButton onClick={() => console.log("Analyzing...")}>
+                Analyze the statistics
+              </Welcome.ActionButton>
+            </Welcome>
             <Stats />
           </div>
           <div className="sm:w-[66%] mt-10 max-sm:w-[80%]">
