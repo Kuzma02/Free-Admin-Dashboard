@@ -115,10 +115,10 @@ const EditCategory = () => {
                 SEO
               </h3>
               <div className="mt-4 flex flex-col gap-5">
-                <InputWithLabel label="SEO title">
+                <InputWithLabel label="Meta title">
                   <SimpleInput
                     type="text"
-                    placeholder="Enter a SEO title..."
+                    placeholder="Enter a meta title..."
                     value={inputObject.metaTitle}
                     onChange={(e) =>
                       setInputObject({ ...inputObject, title: e.target.value })
@@ -126,9 +126,9 @@ const EditCategory = () => {
                   />
                 </InputWithLabel>
 
-                <InputWithLabel label="SEO description">
+                <InputWithLabel label="Meta description">
                   <TextAreaInput
-                    placeholder="Enter a SEO description..."
+                    placeholder="Enter a meta description..."
                     rows={4}
                     cols={50}
                     value={inputObject.metaDescription}

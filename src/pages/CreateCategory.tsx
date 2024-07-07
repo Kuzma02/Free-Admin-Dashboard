@@ -81,13 +81,13 @@ const CreateCategory = () => {
                 SEO
               </h3>
               <div className="mt-4 flex flex-col gap-5">
-                <InputWithLabel label="SEO title">
-                  <SimpleInput type="text" placeholder="Enter a SEO title..." />
+                <InputWithLabel label="Meta title">
+                  <SimpleInput type="text" placeholder="Enter a meta title..." />
                 </InputWithLabel>
 
-                <InputWithLabel label="SEO description">
+                <InputWithLabel label="Meta description">
                   <TextAreaInput
-                    placeholder="Enter a SEO description..."
+                    placeholder="Enter a meta description..."
                     rows={4}
                     cols={50}
                   />
