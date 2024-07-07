@@ -215,7 +215,7 @@ const CategoryTable = () => {
             <td className="py-4 pl-0 pr-4 text-right text-sm leading-6 text-whiteSecondary table-cell pr-6 lg:pr-8">
               <div className="flex gap-x-1 justify-end">
                 <Link
-                  to="#"
+                  to="/categories/1"
                   className="bg-blackPrimary text-whiteSecondary border border-gray-600 w-8 h-8 block flex justify-center items-center cursor-pointer hover:border-gray-500"
                 >
                   <HiOutlinePencil className="text-lg" />

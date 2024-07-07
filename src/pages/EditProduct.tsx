@@ -6,7 +6,7 @@ import SimpleInput from "../components/SimpleInput";
 import TextAreaInput from "../components/TextAreaInput";
 import SelectInput from "../components/SelectInput";
 import { selectList, stockStatusList } from "../utils/data";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const EditProduct = () => {
   const [inputObject, setInputObject] = useState({
@@ -35,7 +35,7 @@ const EditProduct = () => {
           <div className="px-4 sm:px-6 lg:px-8 pb-8 border-b border-gray-800 flex justify-between items-center max-sm:flex-col max-sm:gap-5">
             <div className="flex flex-col gap-3">
               <h2 className="text-3xl font-bold leading-7 text-whiteSecondary">
-                Add new product
+                Edit product
               </h2>
             </div>
             <div className="flex gap-x-2 max-[370px]:flex-col max-[370px]:gap-2 max-[370px]:items-center">
@@ -51,7 +51,7 @@ const EditProduct = () => {
               >
                 <HiOutlineSave className="text-blackPrimary text-xl" />
                 <span className="text-blackPrimary font-semibold">
-                  Publish product
+                  Update product
                 </span>
               </Link>
             </div>
