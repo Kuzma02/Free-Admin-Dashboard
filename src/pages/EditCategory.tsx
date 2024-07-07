@@ -18,6 +18,8 @@ const EditCategory = () => {
     description: "This is a category for all computers.",
     slug: "pc",
     parentCategory: "",
+    metaTitle: "PC category",
+    metaDescription: "This is a category for all computers.",
   });
 
   return (
@@ -109,6 +111,36 @@ const EditCategory = () => {
                   />
                 </InputWithLabel>
               </div>
+              <h3 className="text-2xl font-bold leading-7 text-whiteSecondary mt-16">
+                SEO
+              </h3>
+              <div className="mt-4 flex flex-col gap-5">
+                <InputWithLabel label="SEO title">
+                  <SimpleInput
+                    type="text"
+                    placeholder="Enter a SEO title..."
+                    value={inputObject.metaTitle}
+                    onChange={(e) =>
+                      setInputObject({ ...inputObject, title: e.target.value })
+                    }
+                  />
+                </InputWithLabel>
+
+                <InputWithLabel label="SEO description">
+                  <TextAreaInput
+                    placeholder="Enter a SEO description..."
+                    rows={4}
+                    cols={50}
+                    value={inputObject.metaDescription}
+                    onChange={(e) =>
+                      setInputObject({
+                        ...inputObject,
+                        description: e.target.value,
+                      })
+                    }
+                  />
+                </InputWithLabel>
+              </div>
             </div>
 
             {/* right div */}
@@ -120,9 +152,12 @@ const EditCategory = () => {
               <ImageUpload />
 
               <div className="flex justify-center gap-x-2 mt-5 flex-wrap">
-                <img src='/src/assets/tablet (1).jpg' alt='' className="w-36 h-32"/>
+                <img
+                  src="/src/assets/tablet (1).jpg"
+                  alt=""
+                  className="w-36 h-32"
+                />
               </div>
-
             </div>
           </div>
         </div>

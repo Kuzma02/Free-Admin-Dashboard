@@ -77,6 +77,22 @@ const CreateCategory = () => {
                   <SelectInput selectList={selectList} />
                 </InputWithLabel>
               </div>
+              <h3 className="text-2xl font-bold leading-7 text-whiteSecondary mt-16">
+                SEO
+              </h3>
+              <div className="mt-4 flex flex-col gap-5">
+                <InputWithLabel label="SEO title">
+                  <SimpleInput type="text" placeholder="Enter a SEO title..." />
+                </InputWithLabel>
+
+                <InputWithLabel label="SEO description">
+                  <TextAreaInput
+                    placeholder="Enter a SEO description..."
+                    rows={4}
+                    cols={50}
+                  />
+                </InputWithLabel>
+              </div>
             </div>
 
             {/* right div */}
