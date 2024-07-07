@@ -10,25 +10,22 @@ import { useEffect, useState } from "react";
 
 const EditProduct = () => {
   const [inputObject, setInputObject] = useState({
-    title: "",
-    description: "",
+    title: "Samsung Galaxy Tab A7 Lite",
+    description: "This is demo description for Samsung Galaxy Tab A7 Lite.",
     category: selectList[0].value,
-    basePrice: "",
-    discountPrice: "",
-    stock: "",
-    sku: "",
+    basePrice: "$100",
+    discountPrice: "$80",
+    stock: "50",
+    sku: "SK-2323-2323",
     stockStatus: stockStatusList[0].value,
-    weight: "",
-    length: "",
-    width: "",
-    height: "",
-    metaTitle: "",
-    metaDescription: "",
+    weight: "500g",
+    length: "600cm",
+    width: "600cm",
+    height: "400cm",
+    metaTitle: "Samsung Galaxy Tab A7 Lite - Demo Title",
+    metaDescription: "Samsung Galaxy Tab A7 Lite - Demo Description",
   });
 
-  useEffect(() => {
-    console.log(inputObject);
-  }, [inputObject]);
 
   return (
     <div className="h-auto border-t border-blackSecondary border-1 flex">
@@ -117,7 +114,7 @@ const EditProduct = () => {
                 <div className="grid grid-cols-2 gap-x-5 max-[500px]:grid-cols-1 max-[500px]:gap-x-0 max-[500px]:gap-y-5">
                   <InputWithLabel label="Base pricing">
                     <SimpleInput
-                      type="number"
+                      type="text"
                       placeholder="Enter a product base pricing..."
                       value={inputObject.basePrice}
                       onChange={(e) =>
@@ -131,7 +128,7 @@ const EditProduct = () => {
 
                   <InputWithLabel label="Price with dicount">
                     <SimpleInput
-                      type="number"
+                      type="text"
                       placeholder="Enter a price with discount..."
                       value={inputObject.discountPrice}
                       onChange={(e) =>
@@ -147,7 +144,7 @@ const EditProduct = () => {
                 <div className="grid grid-cols-2 gap-x-5 max-[500px]:grid-cols-1 max-[500px]:gap-x-0 max-[500px]:gap-y-5">
                   <InputWithLabel label="Stock">
                     <SimpleInput
-                      type="number"
+                      type="text"
                       placeholder="Enter a product stock..."
                       value={inputObject.stock}
                       onChange={(e) =>
@@ -195,7 +192,7 @@ const EditProduct = () => {
                 <div className="grid grid-cols-2 gap-x-5 gap-y-5 max-[500px]:grid-cols-1 max-[500px]:gap-x-0 max-[500px]:gap-y-5">
                   <InputWithLabel label="Weight (kg)">
                     <SimpleInput
-                      type="number"
+                      type="text"
                       placeholder="Enter a product weight..."
                       value={inputObject.weight}
                       onChange={(e) => {
@@ -208,7 +205,7 @@ const EditProduct = () => {
                   </InputWithLabel>
                   <InputWithLabel label="Length (cm)">
                     <SimpleInput
-                      type="number"
+                      type="text"
                       placeholder="Enter a product length..."
                       value={inputObject.length}
                       onChange={(e) => {
@@ -221,7 +218,7 @@ const EditProduct = () => {
                   </InputWithLabel>
                   <InputWithLabel label="Width (cm)">
                     <SimpleInput
-                      type="number"
+                      type="text"
                       placeholder="Enter a product width..."
                       value={inputObject.width}
                       onChange={(e) => {
@@ -234,7 +231,7 @@ const EditProduct = () => {
                   </InputWithLabel>
                   <InputWithLabel label="Height (cm)">
                     <SimpleInput
-                      type="number"
+                      type="text"
                       placeholder="Enter a product height..."
                       value={inputObject.height}
                       onChange={(e) => {
