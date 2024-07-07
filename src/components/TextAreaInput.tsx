@@ -2,6 +2,8 @@ interface TextAreaProps extends React.InputHTMLAttributes<HTMLTextAreaElement> {
   rows?: number;
   cols?: number;
   placeholder?: string;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
 }
 
 const TextAreaInput: React.FC<TextAreaProps> = (props) => {

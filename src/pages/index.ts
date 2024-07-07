@@ -10,3 +10,4 @@ export { default as CreateCategory } from "./CreateCategory";
 export { default as CreateOrder } from "./CreateOrder";
 export { default as CreateUser } from "./CreateUser";
 export { default as CreateReview } from "./CreateReview";
+export { default as EditProduct } from "./EditProduct";

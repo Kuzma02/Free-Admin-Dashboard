@@ -6,6 +6,7 @@ import {
   CreateProduct,
   CreateReview,
   CreateUser,
+  EditProduct,
   HomeLayout,
   Landing,
   Orders,
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/products/create-product",
         element: <CreateProduct />,
+      },
+      {
+        path: "/products/:id",
+        element: <EditProduct />,
       },
       {
         path: "/categories",

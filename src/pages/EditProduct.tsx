@@ -6,8 +6,30 @@ import SimpleInput from "../components/SimpleInput";
 import TextAreaInput from "../components/TextAreaInput";
 import SelectInput from "../components/SelectInput";
 import { selectList, stockStatusList } from "../utils/data";
+import { useEffect, useState } from "react";
 
-const CreateProduct = () => {
+const EditProduct = () => {
+  const [inputObject, setInputObject] = useState({
+    title: "",
+    description: "",
+    category: selectList[0].value,
+    basePrice: "",
+    discountPrice: "",
+    stock: "",
+    sku: "",
+    stockStatus: stockStatusList[0].value,
+    weight: "",
+    length: "",
+    width: "",
+    height: "",
+    metaTitle: "",
+    metaDescription: "",
+  });
+
+  useEffect(() => {
+    console.log(inputObject);
+  }, [inputObject]);
+
   return (
     <div className="h-auto border-t border-blackSecondary border-1 flex">
       <Sidebar />
@@ -51,6 +73,10 @@ const CreateProduct = () => {
                   <SimpleInput
                     type="text"
                     placeholder="Enter a product title..."
+                    value={inputObject.title}
+                    onChange={(e) =>
+                      setInputObject({ ...inputObject, title: e.target.value })
+                    }
                   />
                 </InputWithLabel>
 
@@ -59,11 +85,27 @@ const CreateProduct = () => {
                     placeholder="Enter a product description..."
                     rows={4}
                     cols={50}
+                    value={inputObject.description}
+                    onChange={(e) =>
+                      setInputObject({
+                        ...inputObject,
+                        description: e.target.value,
+                      })
+                    }
                   />
                 </InputWithLabel>
 
                 <InputWithLabel label="Category">
-                  <SelectInput selectList={selectList} />
+                  <SelectInput
+                    selectList={selectList}
+                    value={inputObject.category}
+                    onChange={(e) =>
+                      setInputObject({
+                        ...inputObject,
+                        category: e.target.value,
+                      })
+                    }
+                  />
                 </InputWithLabel>
               </div>
 
@@ -77,6 +119,13 @@ const CreateProduct = () => {
                     <SimpleInput
                       type="number"
                       placeholder="Enter a product base pricing..."
+                      value={inputObject.basePrice}
+                      onChange={(e) =>
+                        setInputObject({
+                          ...inputObject,
+                          basePrice: e.target.value,
+                        })
+                      }
                     />
                   </InputWithLabel>
 
@@ -84,6 +133,13 @@ const CreateProduct = () => {
                     <SimpleInput
                       type="number"
                       placeholder="Enter a price with discount..."
+                      value={inputObject.discountPrice}
+                      onChange={(e) =>
+                        setInputObject({
+                          ...inputObject,
+                          discountPrice: e.target.value,
+                        })
+                      }
                     />
                   </InputWithLabel>
                 </div>
@@ -93,6 +149,13 @@ const CreateProduct = () => {
                     <SimpleInput
                       type="number"
                       placeholder="Enter a product stock..."
+                      value={inputObject.stock}
+                      onChange={(e) =>
+                        setInputObject({
+                          ...inputObject,
+                          stock: e.target.value,
+                        })
+                      }
                     />
                   </InputWithLabel>
 
@@ -100,11 +163,27 @@ const CreateProduct = () => {
                     <SimpleInput
                       type="text"
                       placeholder="Enter a product SKU..."
+                      value={inputObject.sku}
+                      onChange={(e) =>
+                        setInputObject({
+                          ...inputObject,
+                          sku: e.target.value,
+                        })
+                      }
                     />
                   </InputWithLabel>
                 </div>
                 <InputWithLabel label="Stock status">
-                  <SelectInput selectList={stockStatusList} />
+                  <SelectInput
+                    selectList={stockStatusList}
+                    value={inputObject.stockStatus}
+                    onChange={(e) =>
+                      setInputObject({
+                        ...inputObject,
+                        stockStatus: e.target.value,
+                      })
+                    }
+                  />
                 </InputWithLabel>
               </div>
 
@@ -118,24 +197,52 @@ const CreateProduct = () => {
                     <SimpleInput
                       type="number"
                       placeholder="Enter a product weight..."
+                      value={inputObject.weight}
+                      onChange={(e) => {
+                        setInputObject({
+                          ...inputObject,
+                          weight: e.target.value,
+                        });
+                      }}
                     />
                   </InputWithLabel>
                   <InputWithLabel label="Length (cm)">
                     <SimpleInput
                       type="number"
                       placeholder="Enter a product length..."
+                      value={inputObject.length}
+                      onChange={(e) => {
+                        setInputObject({
+                          ...inputObject,
+                          length: e.target.value,
+                        });
+                      }}
                     />
                   </InputWithLabel>
                   <InputWithLabel label="Width (cm)">
                     <SimpleInput
                       type="number"
                       placeholder="Enter a product width..."
+                      value={inputObject.width}
+                      onChange={(e) => {
+                        setInputObject({
+                          ...inputObject,
+                          width: e.target.value,
+                        });
+                      }}
                     />
                   </InputWithLabel>
                   <InputWithLabel label="Height (cm)">
                     <SimpleInput
                       type="number"
                       placeholder="Enter a product height..."
+                      value={inputObject.height}
+                      onChange={(e) => {
+                        setInputObject({
+                          ...inputObject,
+                          height: e.target.value,
+                        });
+                      }}
                     />
                   </InputWithLabel>
                 </div>
@@ -150,6 +257,13 @@ const CreateProduct = () => {
                     <SimpleInput
                       type="text"
                       placeholder="Enter a meta title..."
+                      value={inputObject.metaTitle}
+                        onChange={(e) =>
+                            setInputObject({
+                            ...inputObject,
+                            metaTitle: e.target.value,
+                            })
+                        }
                     />
                   </InputWithLabel>
 
@@ -158,11 +272,20 @@ const CreateProduct = () => {
                       placeholder="Enter a meta description..."
                       rows={4}
                       cols={50}
+                      value={inputObject.metaDescription}
+                        onChange={(e) =>
+                            setInputObject({
+                            ...inputObject,
+                            metaDescription: e.target.value,
+                            })
+                        }
                     />
                   </InputWithLabel>
                 </div>
               </div>
             </div>
+
+            
 
             {/* right div */}
             <div>
@@ -171,7 +294,12 @@ const CreateProduct = () => {
               </h3>
 
               <ImageUpload />
-
+              <div className="flex justify-center gap-x-2 mt-5 flex-wrap">
+                <img src='/src/assets/tablet (1).jpg' alt='' className="w-36 h-32"/>
+                <img src="/src/assets/tablet (2).jpg" alt="" className="w-36 h-32" />
+                <img src='/src/assets/tablet (3).jpg' alt='' className="w-36 h-32"/>
+                <img src="/src/assets/tablet (4).jpg" alt="" className="w-36 h-32" />
+              </div>
             </div>
           </div>
         </div>
@@ -179,4 +307,4 @@ const CreateProduct = () => {
     </div>
   );
 };
-export default CreateProduct;
+export default EditProduct;
