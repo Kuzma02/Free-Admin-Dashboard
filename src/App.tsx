@@ -17,7 +17,7 @@ import {
   Orders,
   Products,
   Reviews,
-  Users
+  Users,
 } from "./pages";
 const router = createBrowserRouter([
   {
@@ -91,12 +91,10 @@ const router = createBrowserRouter([
       {
         path: "/help-desk",
         element: <HelpDesk />,
-      }
-
+      },
     ],
   },
 ]);
-
 
 function App() {
   return <RouterProvider router={router} />;

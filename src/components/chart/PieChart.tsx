@@ -1,9 +1,24 @@
 import { Pie } from "react-chartjs-2";
 import { Chart as ChartJS, Tooltip, Legend, ArcElement } from "chart.js";
+import { useAppSelector } from "../../hooks";
 
 ChartJS.register(Tooltip, Legend, ArcElement);
 
 const PieChart = () => {
+
+  const { darkMode } = useAppSelector((state) => state.darkMode);
+  if (darkMode) {
+    ChartJS.defaults.color = "#fff";
+    ChartJS.defaults.backgroundColor = '#fff';
+    ChartJS.defaults.borderColor = '#fff';
+    ChartJS.defaults.color = '#fff';
+  } else {
+    ChartJS.defaults.color = "#000";
+    ChartJS.defaults.backgroundColor = '#000';
+    ChartJS.defaults.borderColor = '#000';
+    ChartJS.defaults.color = '#000';
+  }
+
   const options = {};
   const data = {
     labels: ["Facebook", "Instagram", "Twitter", "YouTube", "LinkedIn"],

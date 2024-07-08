@@ -9,7 +9,7 @@ import { FaAsterisk } from "react-icons/fa6";
 const ActivityByTime = () => {
   return (
     <div>
-      <h4 className="text-2xl text-whiteSecondary font-bold mb-7  max-[440px]:text-left">
+      <h4 className="text-2xl dark:text-whiteSecondary text-blackPrimary font-bold mb-7  max-[440px]:text-left">
         Activity by Time
       </h4>
       <div className="w-full flex flex-col gap-y-4 max-[440px]:grid max-[440px]:grid-cols-2 max-[390px]:grid-cols-1">
@@ -19,7 +19,7 @@ const ActivityByTime = () => {
           totalMoney="$50,00"
           percent="+5%"
         >
-          <FaClock className="text-blackPrimary text-3xl" />
+          <FaClock className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
         <SingleActivity
           mainTitle="Daily"
@@ -27,7 +27,7 @@ const ActivityByTime = () => {
           totalMoney="$300,00"
           percent="+5%"
         >
-          <FaCalendarDay className="text-blackPrimary text-3xl" />
+          <FaCalendarDay className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
         <SingleActivity
           mainTitle="Weekly"
@@ -35,7 +35,7 @@ const ActivityByTime = () => {
           totalMoney="$2100,50"
           percent="+10%"
         >
-          <FaCalendarWeek className="text-blackPrimary text-3xl" />
+          <FaCalendarWeek className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
         <SingleActivity
           mainTitle="Monthly"
@@ -43,7 +43,7 @@ const ActivityByTime = () => {
           totalMoney="$8400,75"
           percent="+15%"
         >
-          <FaCalendarDays className="text-blackPrimary text-3xl" />
+          <FaCalendarDays className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
         <SingleActivity
           mainTitle="Yearly"
@@ -51,7 +51,7 @@ const ActivityByTime = () => {
           totalMoney="$100,200"
           percent="+20%"
         >
-          <FaCalendar className="text-blackPrimary text-3xl" />
+          <FaCalendar className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
         <SingleActivity
           mainTitle="Lifetime"
@@ -59,7 +59,7 @@ const ActivityByTime = () => {
           totalMoney="$840,200"
           percent="+44%"
         >
-          <FaAsterisk className="text-blackPrimary text-3xl" />
+          <FaAsterisk className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
       </div>
     </div>

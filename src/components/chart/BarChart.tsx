@@ -8,6 +8,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { useAppSelector } from "../../hooks";
 
 ChartJS.register(
   CategoryScale,
@@ -19,6 +20,20 @@ ChartJS.register(
 );
 
 const BarChart = () => {
+
+  const { darkMode } = useAppSelector((state) => state.darkMode);
+  if (darkMode) {
+    ChartJS.defaults.color = "#fff";
+    ChartJS.defaults.backgroundColor = '#fff';
+    ChartJS.defaults.borderColor = '#fff';
+    ChartJS.defaults.color = '#fff';
+  } else {
+    ChartJS.defaults.color = "#000";
+    ChartJS.defaults.backgroundColor = '#000';
+    ChartJS.defaults.borderColor = '#000';
+    ChartJS.defaults.color = '#000';
+  }
+
   const options = {};
   const data = {
     labels: [

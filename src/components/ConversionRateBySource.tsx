@@ -8,7 +8,7 @@ import { FaYoutube } from "react-icons/fa6";
 const ConversionRateBySource = () => {
   return (
     <div>
-      <h4 className="text-2xl text-whiteSecondary font-bold mb-7 max-[440px]:text-left">
+      <h4 className="text-2xl dark:text-whiteSecondary text-blackPrimary font-bold mb-7 max-[440px]:text-left">
         Conversion rate by source
       </h4>
       <div className="w-full flex flex-col gap-y-4 max-[440px]:grid max-[440px]:grid-cols-2 max-[390px]:grid-cols-1">
@@ -18,7 +18,9 @@ const ConversionRateBySource = () => {
           totalMoney="$150,00"
           percent="CR: 15%"
         >
-          <span className="text-black text-xl font-semibold">SEO</span>
+          <span className="dark:text-black text-whiteSecondary text-xl font-semibold">
+            SEO
+          </span>
         </SingleActivity>
         <SingleActivity
           mainTitle="Facebook"
@@ -26,7 +28,7 @@ const ConversionRateBySource = () => {
           totalMoney="$300,00"
           percent="CR: +5%"
         >
-          <FaFacebook className="text-blackPrimary text-3xl" />
+          <FaFacebook className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
         <SingleActivity
           mainTitle="Instagram"
@@ -34,7 +36,7 @@ const ConversionRateBySource = () => {
           totalMoney="$2100,50"
           percent="CRO: 2%"
         >
-          <FaInstagram className="text-blackPrimary text-3xl" />
+          <FaInstagram className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
         <SingleActivity
           mainTitle="Twitter"
@@ -42,7 +44,7 @@ const ConversionRateBySource = () => {
           totalMoney="$8400,75"
           percent="CRO: 25%"
         >
-          <FaXTwitter className="text-blackPrimary text-3xl" />
+          <FaXTwitter className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
         <SingleActivity
           mainTitle="Pinterest"
@@ -50,7 +52,7 @@ const ConversionRateBySource = () => {
           totalMoney="$100,200"
           percent="CRO: 20%"
         >
-          <FaPinterest className="text-blackPrimary text-3xl" />
+          <FaPinterest className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
         <SingleActivity
           mainTitle="YouTube"
@@ -58,7 +60,7 @@ const ConversionRateBySource = () => {
           totalMoney="$840,200"
           percent="CRO: 34%"
         >
-          <FaYoutube className="text-blackPrimary text-3xl" />
+          <FaYoutube className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
       </div>
     </div>
