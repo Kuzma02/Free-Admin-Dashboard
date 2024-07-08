@@ -9,6 +9,7 @@ import {
   EditCategory,
   EditOrder,
   EditProduct,
+  EditUser,
   HomeLayout,
   Landing,
   Orders,
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
       {
         path: "/users",
         element: <Users />,
+      },
+      {
+        path: "/users/:id",
+        element: <EditUser />,
       },
       {
         path: "/users/create-user",

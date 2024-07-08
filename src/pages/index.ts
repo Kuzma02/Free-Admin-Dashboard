@@ -13,3 +13,4 @@ export { default as CreateReview } from "./CreateReview";
 export { default as EditProduct } from "./EditProduct";
 export { default as EditCategory } from "./EditCategory";
 export { default as EditOrder } from "./EditOrder";
+export { default as EditUser } from "./EditUser";
