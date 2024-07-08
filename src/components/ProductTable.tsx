@@ -218,7 +218,7 @@ const ProductTable = () => {
                 >
                   <div className="h-1.5 w-1.5 rounded-full bg-current" />
                 </div>
-                <div className="text-whiteSecondary block">
+                <div className="dark:text-whiteSecondary text-blackPrimary block">
                   {item.status}
                 </div>
               </div>
