@@ -223,7 +223,7 @@ const ProductTable = () => {
                 </div>
               </div>
             </td>
-            <td className="py-4 pl-0 pr-8 text-sm leading-6 text-rose-600 font-medium table-cell lg:pr-20">
+            <td className="py-4 pl-0 pr-8 text-sm leading-6 dark:text-rose-200 text-rose-600 font-medium table-cell lg:pr-20">
               {item.price}
             </td>
             <td className="py-4 pl-0 pr-4 text-right text-sm leading-6 dark:text-whiteSecondary text-blackPrimary table-cell pr-6 lg:pr-8">
