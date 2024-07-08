@@ -9,6 +9,7 @@ import {
   EditCategory,
   EditOrder,
   EditProduct,
+  EditReview,
   EditUser,
   HomeLayout,
   Landing,
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
       {
         path: "/reviews",
         element: <Reviews />,
+      },
+      {
+        path: "/reviews/:id",
+        element: <EditReview />,
       },
       {
         path: "/reviews/create-review",

@@ -6,10 +6,8 @@ import {
   Sidebar,
   SimpleInput,
   WhiteButton,
-  SelectInput,
   TextAreaInput,
 } from "../components";
-import { products } from "../utils/data"; // Assume this is an array of product names or IDs
 
 const CreateReview = () => {
   return (
