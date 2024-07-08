@@ -21,7 +21,7 @@ const Pagination = () => {
     return (
       <div className="flex gap-2 items-center">
         <button
-          className="bg-blackPrimary border border-gray-600 text-whiteSecondary py-1 px-3 hover:border-gray-500"
+          className="dark:bg-blackPrimary bg-whiteSecondary border border-gray-600 dark:text-whiteSecondary text-blackPrimary py-1 px-3 hover:border-gray-500"
           onClick={() => setCurrentPage(currentPage - 1)}
           disabled={currentPage === 1}
         >
@@ -30,14 +30,14 @@ const Pagination = () => {
         {pageNumbers.map(number => (
           <button
             key={number}
-            className={`bg-blackPrimary border border-gray-600 text-whiteSecondary py-1 px-3 hover:border-gray-500 ${currentPage === number ? 'bg-whiteSecondary !text-blackPrimary' : ''}`}
+            className={`border border-gray-600 py-1 px-3 hover:border-gray-500 ${currentPage === number ? 'dark:bg-whiteSecondary bg-blackPrimary dark:text-blackPrimary text-whiteSecondary' : 'dark:bg-blackPrimary bg-whiteSecondary dark:text-whiteSecondary text-blackPrimary'}`}
             onClick={() => setCurrentPage(number)}
           >
             {number}
           </button>
         ))}
         <button
-          className="bg-blackPrimary border border-gray-600 text-whiteSecondary py-1 px-3 hover:border-gray-500"
+          className="dark:bg-blackPrimary bg-whiteSecondary border border-gray-600 dark:text-whiteSecondary text-blackPrimary py-1 px-3 hover:border-gray-500"
           onClick={() => setCurrentPage(currentPage + 1)}
           disabled={currentPage === totalPages}
         >
