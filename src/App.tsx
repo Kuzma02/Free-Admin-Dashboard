@@ -11,6 +11,7 @@ import {
   EditProduct,
   EditReview,
   EditUser,
+  HelpDesk,
   HomeLayout,
   Landing,
   Orders,
@@ -87,6 +88,10 @@ const router = createBrowserRouter([
         path: "/users/create-user",
         element: <CreateUser />,
       },
+      {
+        path: "/help-desk",
+        element: <HelpDesk />,
+      }
 
     ],
   },

@@ -92,10 +92,15 @@ const Sidebar = () => {
         </div>
 
         <div className="absolute bottom-0 border-1 border-t border-blackSecondary w-full">
-          <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
-            <HiOutlineInformationCircle className="text-whiteSecondary text-xl" />
-            <span className="text-whiteSecondary text-lg">Help Desk</span>
-          </div>
+          <NavLink
+            to="/help-desk"
+            className={(isActiveObj) =>
+              isActiveObj.isActive ? navActiveClass : navInactiveClass
+            }
+          >
+            <HiOutlineInformationCircle className="text-xl" />
+            <span className="text-lg">Help Desk</span>
+          </NavLink>
           <div className="flex items-center self-stretch gap-4 py-4 px-6 bg-blackPrimary hover:bg-blackSecondary cursor-pointer max-xl:py-3">
             <HiOutlineChat className="text-whiteSecondary text-xl" />
             <span className="text-whiteSecondary text-lg">Chat</span>
