@@ -16,23 +16,23 @@ const Reviews = () => {
   return (
     <div className="h-auto border-t border-blackSecondary border-1 flex">
       <Sidebar />
-      <div className="bg-blackPrimary w-full ">
-        <div className="bg-blackPrimary py-10">
+      <div className="dark:bg-blackPrimary bg-whiteSecondary w-full ">
+        <div className="dark:bg-blackPrimary bg-whiteSecondary py-10">
           <div className="px-4 sm:px-6 lg:px-8 flex justify-between items-center max-sm:flex-col max-sm:gap-5">
             <div className="flex flex-col gap-3">
-              <h2 className="text-3xl font-bold leading-7 text-whiteSecondary">
+              <h2 className="text-3xl font-bold leading-7 dark:text-whiteSecondary text-blackPrimary">
                 All reviews
               </h2>
-              <p className="text-whiteSecondary text-base font-normal flex items-center">
+              <p className="dark:text-whiteSecondary text-blackPrimary text-base font-normal flex items-center">
                 <span>Dashboard</span>{" "}
                 <HiOutlineChevronRight className="text-lg" />{" "}
                 <span>All reviews</span>
               </p>
             </div>
             <div className="flex gap-x-2 max-[370px]:flex-col max-[370px]:gap-2 max-[370px]:items-center">
-              <button className="bg-blackPrimary border border-gray-600 w-32 py-2 text-lg hover:border-gray-500 duration-200 flex items-center justify-center gap-x-2">
-                <AiOutlineExport className="text-whiteSecondary text-base" />
-                <span className="text-whiteSecondary font-medium">Export</span>
+              <button className="dark:bg-blackPrimary bg-whiteSecondary border border-gray-600 w-32 py-2 text-lg dark:hover:border-gray-500 hover:border-gray-400 duration-200 flex items-center justify-center gap-x-2">
+                <AiOutlineExport className="dark:text-whiteSecondary text-blackPrimary text-base" />
+                <span className="dark:text-whiteSecondary text-blackPrimary font-medium">Export</span>
               </button>
               <WhiteButton
                 link="/reviews/create-review"
@@ -41,7 +41,7 @@ const Reviews = () => {
                 py="2"
                 width="48"
               >
-                <HiOutlinePlus className="text-blackPrimary" />
+                <HiOutlinePlus className="dark:text-blackPrimary text-whiteSecondary" />
               </WhiteButton>
             </div>
           </div>
@@ -50,13 +50,13 @@ const Reviews = () => {
               <HiOutlineSearch className="text-gray-400 text-lg absolute top-3 left-3" />
               <input
                 type="text"
-                className="w-60 h-10 border bg-blackPrimary border-gray-600 text-whiteSecondary outline-0 indent-10 focus:border-gray-500"
+                className="w-60 h-10 border dark:bg-blackPrimary bg-whiteSecondary border-gray-600 dark:text-whiteSecondary text-blackPrimary outline-0 indent-10 dark:focus:border-gray-500 focus:border-gray-400"
                 placeholder="Search reviews..."
               />
             </div>
             <div>
               <select
-                className="w-60 h-10 bg-blackPrimary border border-gray-600 text-whiteSecondary outline-0 pl-3 pr-8 cursor-pointer hover:border-gray-500"
+                className="w-60 h-10 dark:bg-blackPrimary bg-whiteSecondary border border-gray-600 dark:text-whiteSecondary text-blackPrimary outline-0 pl-3 pr-8 cursor-pointer dark:hover:border-gray-500 hover:border-gray-400"
                 name="sort"
                 id="sort"
               >

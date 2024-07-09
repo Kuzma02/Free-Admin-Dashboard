@@ -7,7 +7,7 @@ const InputWithLabel = ({
 }) => {
   return (
     <div>
-      <label className="text-whiteSecondary block text-base font-semibold mb-1">
+      <label className="dark:text-whiteSecondary text-blackPrimary block text-base font-semibold mb-1">
         {label}
       </label>
       {children}

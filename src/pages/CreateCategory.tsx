@@ -15,27 +15,27 @@ const CreateCategory = () => {
   return (
     <div className="h-auto border-t border-blackSecondary border-1 flex">
       <Sidebar />
-      <div className="bg-blackPrimary w-full ">
-        <div className="bg-blackPrimary py-10">
+      <div className="dark:bg-blackPrimary bg-whiteSecondary w-full ">
+        <div className="dark:bg-blackPrimary bg-whiteSecondary py-10">
           <div className="px-4 sm:px-6 lg:px-8 pb-8 border-b border-gray-800 flex justify-between items-center max-sm:flex-col max-sm:gap-5">
             <div className="flex flex-col gap-3">
-              <h2 className="text-3xl font-bold leading-7 text-whiteSecondary">
+              <h2 className="text-3xl font-bold leading-7 dark:text-whiteSecondary text-blackPrimary">
                 Add new category
               </h2>
             </div>
             <div className="flex gap-x-2 max-[370px]:flex-col max-[370px]:gap-2 max-[370px]:items-center">
-              <button className="bg-blackPrimary border border-gray-600 w-48 py-2 text-lg hover:border-gray-500 duration-200 flex items-center justify-center gap-x-2">
-                <AiOutlineSave className="text-whiteSecondary text-xl" />
-                <span className="text-whiteSecondary font-medium">
+              <button className="dark:bg-blackPrimary bg-whiteSecondary border border-gray-600 w-48 py-2 text-lg dark:hover:border-gray-500 hover:border-gray-400 duration-200 flex items-center justify-center gap-x-2">
+                <AiOutlineSave className="dark:text-whiteSecondary text-blackPrimary text-xl" />
+                <span className="dark:text-whiteSecondary text-blackPrimary font-medium">
                   Save draft
                 </span>
               </button>
               <Link
                 to="/categories/add-category"
-                className="bg-whiteSecondary w-48 py-2 text-lg hover:bg-white duration-200 flex items-center justify-center gap-x-2"
+                className="dark:bg-whiteSecondary bg-blackPrimary w-48 py-2 text-lg dark:hover:bg-white hover:bg-black duration-200 flex items-center justify-center gap-x-2"
               >
-                <HiOutlineSave className="text-blackPrimary text-xl" />
-                <span className="text-blackPrimary font-semibold">
+                <HiOutlineSave className="dark:hover:text-blackPrimary hover:text-whiteSecondary dark:text-blackPrimary text-whiteSecondary text-xl" />
+                <span className="dark:text-blackPrimary text-whiteSecondary font-semibold">
                   Publish category
                 </span>
               </Link>
@@ -46,7 +46,7 @@ const CreateCategory = () => {
           <div className="px-4 sm:px-6 lg:px-8 pb-8 pt-8 grid grid-cols-2 gap-x-10 max-xl:grid-cols-1 max-xl:gap-y-10">
             {/* left div */}
             <div>
-              <h3 className="text-2xl font-bold leading-7 text-whiteSecondary">
+              <h3 className="text-2xl font-bold leading-7 dark:text-whiteSecondary text-blackPrimary">
                 Basic information
               </h3>
 
@@ -77,7 +77,7 @@ const CreateCategory = () => {
                   <SelectInput selectList={selectList} />
                 </InputWithLabel>
               </div>
-              <h3 className="text-2xl font-bold leading-7 text-whiteSecondary mt-16">
+              <h3 className="text-2xl font-bold leading-7 dark:text-whiteSecondary text-blackPrimary mt-16">
                 SEO
               </h3>
               <div className="mt-4 flex flex-col gap-5">
@@ -97,7 +97,7 @@ const CreateCategory = () => {
 
             {/* right div */}
             <div>
-              <h3 className="text-2xl font-bold leading-7 text-whiteSecondary">
+              <h3 className="text-2xl font-bold leading-7 dark:text-whiteSecondary text-blackPrimary">
                 Category image
               </h3>
 
