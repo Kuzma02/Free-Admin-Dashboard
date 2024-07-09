@@ -41,7 +41,7 @@ const Orders = () => {
               <HiOutlineSearch className="text-gray-400 text-lg absolute top-3 left-3" />
               <input
                 type="text"
-                className="w-60 h-10 border dark:bg-blackPrimary bg-whiteSecondary border-gray-600 dark:text-whiteSecondary text-blackPrimary outline-0 indent-10 dark:focus:border-gray-500 focus:border-gray-400"
+                className="w-60 h-10 border dark:bg-blackPrimary bg-white border-gray-600 dark:text-whiteSecondary text-blackPrimary outline-0 indent-10 dark:focus:border-gray-500 focus:border-gray-400"
                 placeholder="Search orders..."
               />
             </div>
