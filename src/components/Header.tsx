@@ -25,23 +25,37 @@ const Header = () => {
         <SearchInput />
         <div className="flex gap-4 items-center max-xl:justify-center">
           <span className="dark:text-whiteSecondary text-blackPrimary">EN</span>
-          {darkMode ? <HiOutlineSun onClick={() => dispatch(toggleDarkMode())} className="text-xl dark:text-whiteSecondary text-blackPrimary cursor-pointer" /> : <HiOutlineMoon onClick={() => dispatch(toggleDarkMode())} className="text-xl dark:text-whiteSecondary text-blackPrimary cursor-pointer" />}
-          <Link to="/notifications"><HiOutlineBell className="text-xl dark:text-whiteSecondary text-blackPrimary" /></Link>
-          <div className="flex gap-2 items-center">
-            <img
-              src="/src/assets/profile.jpg"
-              alt="profile"
-              className="rounded-full w-10 h-10"
+          {darkMode ? (
+            <HiOutlineSun
+              onClick={() => dispatch(toggleDarkMode())}
+              className="text-xl dark:text-whiteSecondary text-blackPrimary cursor-pointer"
             />
-            <div className="flex flex-col">
-              <p className="dark:text-whiteSecondary text-blackPrimary text-base max-xl:text-sm">
-                Sherwood Gruninger
-              </p>
-              <p className="dark:text-whiteSecondary text-blackPrimary text-sm max-xl:text-xs">
-                Web Developer
-              </p>
+          ) : (
+            <HiOutlineMoon
+              onClick={() => dispatch(toggleDarkMode())}
+              className="text-xl dark:text-whiteSecondary text-blackPrimary cursor-pointer"
+            />
+          )}
+          <Link to="/notifications">
+            <HiOutlineBell className="text-xl dark:text-whiteSecondary text-blackPrimary" />
+          </Link>
+          <Link to="/profile">
+            <div className="flex gap-2 items-center">
+              <img
+                src="/src/assets/profile.jpg"
+                alt="profile"
+                className="rounded-full w-10 h-10"
+              />
+              <div className="flex flex-col">
+                <p className="dark:text-whiteSecondary text-blackPrimary text-base max-xl:text-sm">
+                  Sherwood Gruninger
+                </p>
+                <p className="dark:text-whiteSecondary text-blackPrimary text-sm max-xl:text-xs">
+                  Web Developer
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </header>

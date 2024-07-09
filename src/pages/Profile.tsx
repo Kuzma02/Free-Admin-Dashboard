@@ -1,7 +1,14 @@
-import { HiOutlineEye } from "react-icons/hi";
-import { SimpleNotification, Sidebar } from "../components";
+import { HiOutlineSave, HiOutlineUpload, HiOutlineUser } from "react-icons/hi";
+import { InputWithLabel, Sidebar, SimpleInput, WhiteButton } from "../components";
+import { useState } from "react";
 
 const Profile = () => {
+  const [inputObject, setInputObject] = useState({
+    username: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
   return (
     <div className="h-auto border-t border-blackSecondary border-1 flex">
       <Sidebar />
@@ -10,50 +17,102 @@ const Profile = () => {
           <div className="px-4 sm:px-6 lg:px-8 pb-8 border-b border-gray-800 flex justify-between items-center max-sm:flex-col max-sm:gap-5">
             <div className="flex flex-col gap-3">
               <h2 className="text-3xl font-bold leading-7 dark:text-whiteSecondary text-blackPrimary">
-                Notifications
+                Your Profile
               </h2>
             </div>
+            {/* Profile update button or any other action */}
             <button className="dark:bg-blackPrimary bg-whiteSecondary border border-gray-600 w-48 py-2 text-lg dark:hover:border-gray-500 hover:border-gray-400 duration-200 flex items-center justify-center gap-x-2">
-              <HiOutlineEye className="dark:text-whiteSecondary text-blackPrimary text-xl" />
+              <HiOutlineSave className="dark:text-whiteSecondary text-blackPrimary text-xl" />
               <span className="dark:text-whiteSecondary text-blackPrimary font-medium">
-                Set all as read
+                Update profile
               </span>
             </button>
           </div>
           <div className="px-4 sm:px-6 lg:px-8 pb-8 pt-8">
-            {/* Notifications */}
-            <div className="flex flex-col gap-1">
-              {/* Single Notification */}
-              <SimpleNotification
-                username="johndoe"
-                imgSrc="/src/assets/random user 1.jpg"
-                date="Thursday 4:20pm"
-                hoursAgo="2 hours ago"
-                action="followed you"
-              />
-              <SimpleNotification
-                username="markkwik"
-                imgSrc="/src/assets/random user 2.jpg"
-                date="Thursday 3:15pm"
-                hoursAgo="3 hours ago"
-                action="liked your post"
-              />
-              <SimpleNotification
-                username="markdoe"
-                imgSrc="/src/assets/random user 3.jpg"
-                date="Thursday 1:30pm"
-                hoursAgo="4 hours ago"
-                action="followed you"
-              />
-              <SimpleNotification
-                username="gg86"
-                imgSrc="/src/assets/random user 4.jpg"
-                date="Thursday 12:10am"
-                hoursAgo="5 hours ago"
-                action="invited you in a private group"
-              />
+            {/* Profile details section */}
+            <div className="flex flex-col gap-4">
+              {/* Example: Displaying user information */}
+              <div className="flex justify-between items-center max-sm:flex-col max-sm:gap-10">
+              <div className="flex items-center gap-4">
+                <img
+                  src="/src/assets/profile.jpg"
+                  alt="Profile"
+                  className="rounded-full w-20 h-20"
+                />
+                <div>
+                  <p className="dark:text-whiteSecondary text-blackPrimary text-xl">
+                    Sherwood Gruninger
+                  </p>
+                  <p className="dark:text-whiteSecondary text-blackPrimary">
+                    Web Developer
+                  </p>
+                </div>
+              </div>
+              <WhiteButton
+                link="/profile"
+                textSize="lg"
+                width="72"
+                py="2"
+                text="Change profile picture"
+              >
+                <HiOutlineUpload className="dark:text-blackPrimary text-whiteSecondary text-xl" />
+              </WhiteButton>
+              </div>
+              {/* Additional sections like password change, email update, etc. */}
+              <div className="flex flex-col gap-3 mt-5">
+                <InputWithLabel label="Your username">
+                  <SimpleInput
+                    type="text"
+                    placeholder="Your username"
+                    value={inputObject.username}
+                    onChange={(e) =>
+                      setInputObject({
+                        ...inputObject,
+                        username: e.target.value,
+                      })
+                    }
+                  />
+                </InputWithLabel>
+                <InputWithLabel label="Your email">
+                  <SimpleInput
+                    type="text"
+                    placeholder="Your email"
+                    value={inputObject.email}
+                    onChange={(e) =>
+                      setInputObject({ ...inputObject, email: e.target.value })
+                    }
+                  />
+                </InputWithLabel>
+                <InputWithLabel label="New password">
+                  <SimpleInput
+                    type="password"
+                    placeholder="Enter your new password..."
+                    value={inputObject.password}
+                    onChange={(e) =>
+                      setInputObject({
+                        ...inputObject,
+                        password: e.target.value,
+                      })
+                    }
+                  />
+                </InputWithLabel>
+                <InputWithLabel label="Confirm new password">
+                  <SimpleInput
+                    type="password"
+                    placeholder="Confirm your new password..."
+                    value={inputObject.confirmPassword}
+                    onChange={(e) =>
+                      setInputObject({
+                        ...inputObject,
+                        confirmPassword: e.target.value,
+                      })
+                    }
+                  />
+                </InputWithLabel>
+              </div>
             </div>
           </div>
+          {/* Notifications section, already implemented in the provided code */}
         </div>
       </div>
     </div>
