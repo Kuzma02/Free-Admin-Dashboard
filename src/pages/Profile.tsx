@@ -21,12 +21,15 @@ const Profile = () => {
               </h2>
             </div>
             {/* Profile update button or any other action */}
-            <button className="dark:bg-blackPrimary bg-whiteSecondary border border-gray-600 w-48 py-2 text-lg dark:hover:border-gray-500 hover:border-gray-400 duration-200 flex items-center justify-center gap-x-2">
-              <HiOutlineSave className="dark:text-whiteSecondary text-blackPrimary text-xl" />
-              <span className="dark:text-whiteSecondary text-blackPrimary font-medium">
-                Update profile
-              </span>
-            </button>
+            <WhiteButton
+                link="/profile"
+                textSize="lg"
+                width="48"
+                py="2"
+                text="Update profile"
+              >
+                <HiOutlineSave className="dark:text-blackPrimary text-whiteSecondary text-xl" />
+              </WhiteButton>
           </div>
           <div className="px-4 sm:px-6 lg:px-8 pb-8 pt-8">
             {/* Profile details section */}
@@ -48,15 +51,13 @@ const Profile = () => {
                   </p>
                 </div>
               </div>
-              <WhiteButton
-                link="/profile"
-                textSize="lg"
-                width="72"
-                py="2"
-                text="Change profile picture"
-              >
-                <HiOutlineUpload className="dark:text-blackPrimary text-whiteSecondary text-xl" />
-              </WhiteButton>
+              
+              <button className="dark:bg-blackPrimary bg-whiteSecondary border border-gray-600 w-72 py-2 text-lg dark:hover:border-gray-500 hover:border-gray-400 duration-200 flex items-center justify-center gap-x-2">
+              <HiOutlineUpload className="dark:text-whiteSecondary text-blackPrimary text-xl" />
+              <span className="dark:text-whiteSecondary text-blackPrimary font-medium">
+              Change profile picture
+              </span>
+            </button>
               </div>
               {/* Additional sections like password change, email update, etc. */}
               <div className="flex flex-col gap-3 mt-5">

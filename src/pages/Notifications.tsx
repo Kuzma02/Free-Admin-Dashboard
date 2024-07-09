@@ -1,5 +1,5 @@
 import { HiOutlineEye } from "react-icons/hi";
-import { SimpleNotification, Sidebar } from "../components";
+import { SimpleNotification, Sidebar, WhiteButton } from "../components";
 
 const Notifications = () => {
   return (
@@ -13,12 +13,15 @@ const Notifications = () => {
                 Notifications
               </h2>
             </div>
-            <button className="dark:bg-blackPrimary bg-whiteSecondary border border-gray-600 w-48 py-2 text-lg dark:hover:border-gray-500 hover:border-gray-400 duration-200 flex items-center justify-center gap-x-2">
-              <HiOutlineEye className="dark:text-whiteSecondary text-blackPrimary text-xl" />
-              <span className="dark:text-whiteSecondary text-blackPrimary font-medium">
-                Set all as read
-              </span>
-            </button>
+            <WhiteButton
+                link="/notifications"
+                textSize="lg"
+                width="48"
+                py="2"
+                text="Set all as read"
+              >
+                <HiOutlineEye className="dark:text-blackPrimary text-whiteSecondary text-xl" />
+              </WhiteButton>
           </div>
           <div className="px-4 sm:px-6 lg:px-8 pb-8 pt-8">
             {/* Notifications */}
