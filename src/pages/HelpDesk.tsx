@@ -3,7 +3,7 @@ import { HiOutlineInformationCircle } from "react-icons/hi";
 
 const HelpDesk = () => {
   return (
-    <div className="h-auto border-t border-blackSecondary border-1 flex">
+    <div className="h-auto border-t border-blackSecondary border-1 flex dark:bg-blackPrimary bg-whiteSecondary">
     <Sidebar />
     <div className="dark:bg-blackPrimary bg-whiteSecondary w-full">
       <div className="dark:bg-blackPrimary bg-whiteSecondary py-10">
