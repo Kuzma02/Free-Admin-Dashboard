@@ -14,8 +14,10 @@ import {
   HelpDesk,
   HomeLayout,
   Landing,
+  Notifications,
   Orders,
   Products,
+  Profile,
   Reviews,
   Users,
 } from "./pages";
@@ -91,6 +93,14 @@ const router = createBrowserRouter([
       {
         path: "/help-desk",
         element: <HelpDesk />,
+      },
+      {
+        path: "/notifications",
+        element: <Notifications />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
       },
     ],
   },

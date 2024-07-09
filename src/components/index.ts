@@ -24,3 +24,4 @@ export { default as ImageUpload } from "./ImageUpload";
 export { default as WhiteButton } from "./WhiteButton";
 export { default as SelectInput } from "./SelectInput";
 export { default as FAQSection } from "./FAQSection";
+export { default as SimpleNotification } from "./SimpleNotification";

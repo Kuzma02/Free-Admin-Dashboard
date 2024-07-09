@@ -247,7 +247,7 @@ const ReviewsTable = () => {
                 <HiOutlinePencil className="text-lg" />
               </Link>
               <Link
-                to="#"
+                to="/reviews/1"
                 className="dark:bg-blackPrimary bg-whiteSecondary dark:text-whiteSecondary text-blackPrimary border border-gray-600 w-8 h-8 block flex justify-center items-center cursor-pointer dark:hover:border-gray-500 hover:border-gray-400"
               >
                 <HiOutlineEye className="text-lg" />

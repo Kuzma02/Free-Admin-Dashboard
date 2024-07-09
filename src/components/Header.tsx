@@ -26,7 +26,7 @@ const Header = () => {
         <div className="flex gap-4 items-center max-xl:justify-center">
           <span className="dark:text-whiteSecondary text-blackPrimary">EN</span>
           {darkMode ? <HiOutlineSun onClick={() => dispatch(toggleDarkMode())} className="text-xl dark:text-whiteSecondary text-blackPrimary cursor-pointer" /> : <HiOutlineMoon onClick={() => dispatch(toggleDarkMode())} className="text-xl dark:text-whiteSecondary text-blackPrimary cursor-pointer" />}
-          <HiOutlineBell className="text-xl dark:text-whiteSecondary text-blackPrimary" />
+          <Link to="/notifications"><HiOutlineBell className="text-xl dark:text-whiteSecondary text-blackPrimary" /></Link>
           <div className="flex gap-2 items-center">
             <img
               src="/src/assets/profile.jpg"

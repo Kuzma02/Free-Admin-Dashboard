@@ -6,7 +6,7 @@ import { HiOutlineSearch } from "react-icons/hi";
 
 const Products = () => {
   return (
-    <div className="h-auto border-t dark:border-blackSecondary border-white border-1 flex">
+    <div className="h-auto border-t dark:border-blackSecondary border-blackSecondary border-1 flex">
       <Sidebar />
       <div className="dark:bg-blackPrimary bg-whiteSecondary w-full ">
         <div className="dark:bg-blackPrimary bg-whiteSecondary py-10">

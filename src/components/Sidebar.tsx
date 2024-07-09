@@ -91,7 +91,7 @@ const Sidebar = () => {
           </NavLink>
         </div>
 
-        <div className="absolute bottom-0 border-1 border-t dark:border-blackSecondary border-white w-full">
+        <div className="absolute bottom-0 border-1 border-t dark:border-blackSecondary border-blackSecondary w-full">
           <NavLink
             to="/help-desk"
             className={(isActiveObj) =>
