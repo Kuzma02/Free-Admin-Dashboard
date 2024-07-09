@@ -20,18 +20,18 @@ const EditReview = () => {
   return (
     <div className="h-auto border-t border-blackSecondary border-1 flex">
       <Sidebar />
-      <div className="bg-blackPrimary w-full ">
-        <div className="bg-blackPrimary py-10">
+      <div className="dark:bg-blackPrimary bg-whiteSecondary w-full ">
+        <div className="dark:bg-blackPrimary bg-whiteSecondary py-10">
           <div className="px-4 sm:px-6 lg:px-8 pb-8 border-b border-gray-800 flex justify-between items-center max-sm:flex-col max-sm:gap-5">
             <div className="flex flex-col gap-3">
-              <h2 className="text-3xl font-bold leading-7 text-whiteSecondary">
+              <h2 className="text-3xl font-bold leading-7 dark:text-whiteSecondary text-blackPrimary">
                 Edit Review
               </h2>
             </div>
             <div className="flex gap-x-2 max-[370px]:flex-col max-[370px]:gap-2 max-[370px]:items-center">
-              <button className="bg-blackPrimary border border-gray-600 w-48 py-2 text-lg hover:border-gray-500 duration-200 flex items-center justify-center gap-x-2">
-                <AiOutlineSave className="text-whiteSecondary text-xl" />
-                <span className="text-whiteSecondary font-medium">
+              <button className="dark:bg-blackPrimary bg-whiteSecondary border border-gray-600 w-48 py-2 text-lg dark:hover:border-gray-500 hover:border-gray-400 duration-200 flex items-center justify-center gap-x-2">
+                <AiOutlineSave className="dark:text-whiteSecondary text-blackPrimary text-xl" />
+                <span className="dark:text-whiteSecondary text-blackPrimary font-medium">
                   Save Review
                 </span>
               </button>
@@ -42,7 +42,7 @@ const EditReview = () => {
                 py="2"
                 text="Update review"
               >
-                <HiOutlineSave className="text-blackPrimary text-xl" />
+                <HiOutlineSave className="dark:text-blackPrimary text-whiteSecondary text-xl" />
               </WhiteButton>
             </div>
           </div>
@@ -50,7 +50,7 @@ const EditReview = () => {
           <div className="px-4 sm:px-6 lg:px-8 pb-8 pt-8 grid grid-cols-2 gap-x-10 max-xl:grid-cols-1 max-xl:gap-y-10">
             {/* Review Details */}
             <div>
-              <h3 className="text-2xl font-bold leading-7 text-whiteSecondary">
+              <h3 className="text-2xl font-bold leading-7 dark:text-whiteSecondary text-blackPrimary">
                 Review Details
               </h3>
 
@@ -100,7 +100,7 @@ const EditReview = () => {
 
             {/* Upload Review Image */}
             <div>
-              <h3 className="text-2xl font-bold leading-7 text-whiteSecondary">
+              <h3 className="text-2xl font-bold leading-7 dark:text-whiteSecondary text-blackPrimary">
                 Upload review images
               </h3>
               <ImageUpload />
@@ -112,7 +112,6 @@ const EditReview = () => {
                   className="w-36 h-32"
                 />
               </div>
-
             </div>
           </div>
         </div>
