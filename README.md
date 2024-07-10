@@ -31,9 +31,10 @@
 
 <b>If you like the free admin dashboard project give it a star on GitHub to support the project and give me the motivation to add many more great features.</b>
 
+<h2>Video instructions for running the app</h2>
+<p>Here is a YouTube link for the video instructions for running the app: <a href="https://www.youtube.com/watch?v=cydXOmMhbtQ">https://www.youtube.com/watch?v=cydXOmMhbtQ</a></p>
+
 <h2>Instructions</h2>
-
-
   <p>1. To run the app you first need to download and install Node.js and npm on your computer. Here is a link to the tutorial that explains how to install them: <a href="https://www.youtube.com/watch?v=4FAtFwKVhn0">https://www.youtube.com/watch?v=4FAtFwKVhn0</a>. Also here is the link where you can download them: <a href="https://nodejs.org/en">https://nodejs.org/en</a></p>
   <p>2. When you install all the programs you need on your computer you need to download the project. When you download the project, you need to extract it.</p>
   <p>3. After you extract the project you need to open the project folder in your terminal of choice and write:</p>
