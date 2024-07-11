@@ -25,3 +25,4 @@ export { default as WhiteButton } from "./WhiteButton";
 export { default as SelectInput } from "./SelectInput";
 export { default as FAQSection } from "./FAQSection";
 export { default as SimpleNotification } from "./SimpleNotification";
+export { default as SingleStatsV2 } from "./SingleStatsV2";

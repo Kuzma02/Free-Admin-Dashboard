@@ -14,6 +14,7 @@ import {
   HelpDesk,
   HomeLayout,
   Landing,
+  LandingV2,
   Notifications,
   Orders,
   Products,
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
+      },
+      {
+        path: "/landing-v2",
+        element: <LandingV2 />,
       },
       {
         path: "/products",
