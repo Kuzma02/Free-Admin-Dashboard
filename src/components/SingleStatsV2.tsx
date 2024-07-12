@@ -3,7 +3,7 @@ import { HiArrowSmallUp } from "react-icons/hi2";
 
 const SingleStatsV2 = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex flex-col gap-2 bg-white px-7 py-5 rounded-md">
+    <div className="flex flex-col gap-2 bg-white w-72 px-5 py-5 rounded-md">
       {children}
     </div>
   );
@@ -34,7 +34,7 @@ const MoneyStats = ({
 }) => {
   return (
     <div className="flex gap-3">
-      <p className="text-3xl font-semibold">${moneyAmount}</p>
+      <p className="text-3xl font-semibold">{moneyAmount}</p>
       {/* <p className="text-white bg-green-500 w-20 h-10 flex gap-1 items-center justify-center font-semibold">
         <HiArrowSmallUp className="text-blackPrimary text-xl" />{" "}
         <span>12.8%</span>
