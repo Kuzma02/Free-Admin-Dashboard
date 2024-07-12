@@ -6,7 +6,10 @@ import {
 } from "react-icons/hi2";
 import { HiArrowSmallUp } from "react-icons/hi2";
 import { HiShoppingCart } from "react-icons/hi2";
-import { LineGraph } from "../components/chart";
+import ChartItem from "../components/chart/ChartItem";
+import RechartsAreaChart from "../components/chart/RechartsAreaChart";
+import RechartsBarChart from "../components/chart/RechartsBarChart";
+import RechartsLineChart from "../components/chart/RechartsLineChart";
 
 const Landingv2 = () => {
   return (
@@ -23,7 +26,7 @@ const Landingv2 = () => {
               <HiCurrencyDollar className="text-2xl" />
             </SingleStatsV2.StatsCategory>
             <SingleStatsV2.MoneyStats moneyAmount="$8650.50">
-              <p className="text-white bg-green-500 w-20 h-10 flex gap-1 items-center justify-center font-semibold">
+              <p className="text-white dark:bg-green-700 bg-green-500 w-20 h-10 flex gap-1 items-center justify-center font-semibold">
                 <HiArrowSmallUp className="text-blackPrimary text-xl" />{" "}
                 <span>12.8%</span>
               </p>
@@ -36,7 +39,7 @@ const Landingv2 = () => {
               <HiShoppingCart className="text-2xl" />
             </SingleStatsV2.StatsCategory>
             <SingleStatsV2.MoneyStats moneyAmount="$1590">
-              <p className="text-white bg-red-500 w-20 h-10 flex gap-1 items-center justify-center font-semibold">
+              <p className="text-white dark:bg-red-700 bg-red-500 w-20 h-10 flex gap-1 items-center justify-center font-semibold">
                 <HiArrowSmallDown className="text-blackPrimary text-xl" />{" "}
                 <span>3.3%</span>
               </p>
@@ -49,7 +52,7 @@ const Landingv2 = () => {
               <HiCurrencyDollar className="text-2xl" />
             </SingleStatsV2.StatsCategory>
             <SingleStatsV2.MoneyStats moneyAmount="12400.75">
-              <p className="text-white bg-green-500 w-20 h-10 flex gap-1 items-center justify-center font-semibold">
+              <p className="text-white dark:bg-green-700 bg-green-500 w-20 h-10 flex gap-1 items-center justify-center font-semibold">
                 <HiArrowSmallUp className="text-blackPrimary text-xl" />{" "}
                 <span>15.1%</span>
               </p>
@@ -65,7 +68,7 @@ const Landingv2 = () => {
               <HiUserGroup className="text-2xl" />
             </SingleStatsV2.StatsCategory>
             <SingleStatsV2.MoneyStats moneyAmount="450">
-              <p className="text-white bg-green-500 w-20 h-10 flex gap-1 items-center justify-center font-semibold">
+              <p className="text-white dark:bg-green-700 bg-green-500 w-20 h-10 flex gap-1 items-center justify-center font-semibold">
                 <HiArrowSmallUp className="text-blackPrimary text-xl" />{" "}
                 <span>3.8%</span>
               </p>
@@ -76,11 +79,18 @@ const Landingv2 = () => {
             />
           </SingleStatsV2>
         </div>
-        <div className="w-[80%] px-5 mt-10 max-md:w-[90%] max-[400px]:w-[95%]">
-          <h3 className="text-3xl dark:text-whiteSecondary text-blackPrimary font-bold mb-7 max-sm:text-2xl">
-            Traffic Overview
-          </h3>
-          <LineGraph />
+        <div className="w-[80%] px-5 mt-10 max-md:w-[90%] max-[400px]:w-[95%] dark:bg-black bg-whiteSecondary">
+        <ChartItem title="Product 1 VS Product 2">
+          <RechartsAreaChart />
+        </ChartItem>
+
+        <ChartItem title="Revenue VS Profit">
+          <RechartsBarChart />
+        </ChartItem>
+
+        <ChartItem title="Revenue VS Profit">
+          <RechartsLineChart />
+        </ChartItem>
         </div>
       </div>
     </div>

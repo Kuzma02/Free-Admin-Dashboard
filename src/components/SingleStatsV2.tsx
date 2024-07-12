@@ -55,8 +55,8 @@ const PercentageStats = ({
     <p
       className={
         isPositive
-          ? `dark:text-green-500 text-green-600 font-semibold`
-          : `dark:text-red-500 text-red-600 font-semibold`
+          ? `dark:text-green-600 text-green-500 font-semibold`
+          : `dark:text-red-600 text-red-500 font-semibold`
       }
     >
       {isPositive ? "+" : "-"}
