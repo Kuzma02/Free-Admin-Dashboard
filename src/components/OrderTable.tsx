@@ -215,16 +215,16 @@ const OrderTable = () => {
                 <div
                   className={`text-sm leading-6 py-1 px-2 ${
                     item.status === "Completed" &&
-                    "bg-green-900 text-whiteSecondary font-semibold"
+                    "dark:bg-green-900 bg-green-700 text-whiteSecondary font-semibold"
                   } ${
                     item.status === "On hold" &&
-                    "bg-yellow-900 text-whiteSecondary font-semibold"
+                    "dark:bg-yellow-900 bg-yellow-700 text-whiteSecondary font-semibold"
                   } ${
                     item.status === "Cancelled" &&
-                    "bg-red-900 text-whiteSecondary font-semibold"
+                    "dark:bg-red-900 bg-red-700 text-whiteSecondary font-semibold"
                   } ${
                     item.status === "Processing" &&
-                    "bg-blue-900 text-whiteSecondary font-semibold"
+                    "dark:bg-blue-900 bg-blue-700 text-whiteSecondary font-semibold"
                   }`}
                 >
                   {item.status}
@@ -233,7 +233,7 @@ const OrderTable = () => {
             </td>
             <td className="py-4 pl-0 pr-4 text-sm leading-6 sm:pr-8 lg:pr-20">
               <div className="flex items-center gap-x-2 justify-start">
-                <div className="dark:text-rose-200 text-rose-500 block font-medium">
+                <div className="dark:text-rose-200 text-rose-500 block font-bold">
                   {item.total}
                 </div>
               </div>
