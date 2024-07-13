@@ -1,4 +1,4 @@
-import { HiOutlineHome } from "react-icons/hi";
+import { HiLogin, HiOutlineHome, HiUserGroup } from "react-icons/hi";
 import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
 import { HiOutlineTag } from "react-icons/hi";
 import { HiOutlineTruck } from "react-icons/hi";
@@ -14,6 +14,7 @@ import { useState } from "react";
 
 const Sidebar = () => {
   const [isLandingOpen, setIsLandingOpen] = useState(false);
+  const [isAuthOpen, setIsAuthOpen] = useState(false);
   const { isSidebarOpen } = useAppSelector((state) => state.dashboard);
   const dispatch = useAppDispatch();
 
@@ -113,6 +114,36 @@ const Sidebar = () => {
             <HiOutlineStar className="text-xl" />
             <span className="text-lg">Reviews</span>
           </NavLink>
+
+          <div
+            onClick={() => setIsAuthOpen(() => !isAuthOpen)}
+            className="block flex items-center self-stretch gap-4 py-4 px-6 dark:bg-blackPrimary dark:hover:bg-blackSecondary cursor-pointer max-xl:py-3 dark:text-whiteSecondary hover:bg-white text-blackPrimary bg-whiteSecondary"
+          >
+            <HiUserGroup className="text-xl" />
+            <span className="text-lg">Auth</span>
+          </div>
+          {isAuthOpen && (
+            <div>
+              <NavLink
+                to="/login"
+                className={(isActiveObj) =>
+                  isActiveObj.isActive ? navActiveClass : navInactiveClass
+                }
+              >
+                <HiLogin className="text-xl" />
+                <span className="text-lg">Login</span>
+              </NavLink>
+              <NavLink
+                to="/register"
+                className={(isActiveObj) =>
+                  isActiveObj.isActive ? navActiveClass : navInactiveClass
+                }
+              >
+                <HiUserGroup className="text-xl" />
+                <span className="text-lg">Register</span>
+              </NavLink>
+            </div>
+          )}
         </div>
 
         <div className="absolute bottom-0 border-1 border-t dark:border-blackSecondary border-blackSecondary w-full">

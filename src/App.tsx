@@ -15,14 +15,24 @@ import {
   HomeLayout,
   Landing,
   LandingV2,
+  Login,
   Notifications,
   Orders,
   Products,
   Profile,
+  Register,
   Reviews,
   Users,
 } from "./pages";
 const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
+  },
   {
     path: "/",
     element: <HomeLayout />,
@@ -108,6 +118,7 @@ const router = createBrowserRouter([
         element: <Profile />,
       },
     ],
+    
   },
 ]);
 
