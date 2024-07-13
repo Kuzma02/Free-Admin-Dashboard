@@ -56,6 +56,10 @@ npm run dev
 
 ![landing white](https://github.com/Kuzma02/Free-Admin-Dashboard/assets/138793624/6d2e522d-7c08-4a28-bdb9-7e4511a75dd4)
 
+![landing v2 black](https://github.com/user-attachments/assets/63392f58-2690-4a41-8244-f1f8690bf4e5)
+
+![landing v2 white](https://github.com/user-attachments/assets/8e22349c-5ff1-4a97-8042-1c012df32b33)
+
 ![all product black full](https://github.com/Kuzma02/Free-Admin-Dashboard/assets/138793624/5d1b58d5-7bae-452e-b6a2-e29643508d2e)
 
 ![all products white full](https://github.com/Kuzma02/Free-Admin-Dashboard/assets/138793624/224113dc-25a0-4e41-9b8b-687da058f932)
