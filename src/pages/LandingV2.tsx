@@ -1,4 +1,4 @@
-import { Sidebar, SingleStatsV2 } from "../components";
+import { Sidebar, SingleStatsV2, TotalSavings } from "../components";
 import {
   HiArrowSmallDown,
   HiCurrencyDollar,
@@ -15,12 +15,12 @@ const Landingv2 = () => {
   return (
     <div className="h-auto border-t dark:border-blackSecondary border-blackSecondary border-1 flex dark:bg-blackPrimary bg-whiteSecondary">
       <Sidebar />
-      <div className="dark:bg-blackPrimary bg-whiteSecondary w-full pt-6 pl-9 max-sm:pt-6 max-sm:pl-5">
+      <div className="dark:bg-blackPrimary bg-whiteSecondary w-full pt-6 pl-9 max-sm:pt-6 max-sm:pl-1">
         <h3 className="text-3xl dark:text-whiteSecondary text-blackPrimary font-bold mb-7 max-sm:text-2xl px-5">
           Overview
         </h3>
         {/* stats */}
-        <div className="flex flex-wrap justify-start gap-5 px-5">
+        <div className="flex flex-wrap justify-between gap-5 px-5 w-[95%]">
           <SingleStatsV2>
             <SingleStatsV2.StatsCategory statsCategory="Profit">
               <HiCurrencyDollar className="text-2xl" />
@@ -79,18 +79,13 @@ const Landingv2 = () => {
             />
           </SingleStatsV2>
         </div>
-        <div className="w-[80%] px-5 mt-10 max-md:w-[90%] max-[400px]:w-[95%] dark:bg-black bg-whiteSecondary">
-        <ChartItem title="Product 1 VS Product 2">
-          <RechartsAreaChart />
-        </ChartItem>
+        <div className="w-[95%] px-5 mt-10 max-md:w-[90%] max-[400px]:w-[95%] dark:bg-black bg-whiteSecondary">
 
         <ChartItem title="Revenue VS Profit">
           <RechartsBarChart />
         </ChartItem>
 
-        <ChartItem title="Revenue VS Profit">
-          <RechartsLineChart />
-        </ChartItem>
+        <TotalSavings isPositive={true} percentage="25%" />
         </div>
       </div>
     </div>
