@@ -1,12 +1,11 @@
 interface SimpleInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-    placeholder?: string;
-    type?: string;
-    value?: string | number;
-    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  placeholder?: string;
+  type?: string;
+  value?: string | number;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const SimpleInput: React.FC<SimpleInputProps> = (props) => {
-  
   return (
     <input
       {...props}
