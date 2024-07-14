@@ -30,3 +30,4 @@ export { default as TotalSavings } from "./TotalSavings";
 export { default as SingleProgressElementTotalSavings } from "./SingleProgressElementTotalSavings";
 export { default as ThirdPartyAuthButton } from "./ThirdPartyAuthButton";
 export { default as LoginComponent } from "./LoginComponent";
+export { default as RegisterComponent } from "./RegisterComponent";
