@@ -89,3 +89,7 @@ npm run dev
 ![profile black full](https://github.com/Kuzma02/Free-Admin-Dashboard/assets/138793624/f633a5b8-f382-4916-aca0-e587205af4c5)
 
 ![notifications black full](https://github.com/Kuzma02/Free-Admin-Dashboard/assets/138793624/de265e28-eb51-448b-9540-b7fb78a9db6e)
+
+![register black](https://github.com/user-attachments/assets/be3ece3b-2aed-4e1a-82b5-47e9e8845619)
+
+![login black](https://github.com/user-attachments/assets/988da627-0449-430c-996e-f2dbd5f128b5)
