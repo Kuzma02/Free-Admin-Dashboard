@@ -92,4 +92,8 @@ npm run dev
 
 ![register black](https://github.com/user-attachments/assets/be3ece3b-2aed-4e1a-82b5-47e9e8845619)
 
+![register white](https://github.com/user-attachments/assets/2aaf7d96-c721-4383-a546-dfb147c45896)
+
 ![login black](https://github.com/user-attachments/assets/988da627-0449-430c-996e-f2dbd5f128b5)
+
+![login white](https://github.com/user-attachments/assets/ee5defb4-931d-484b-8c60-ecc38ae58f8d)
