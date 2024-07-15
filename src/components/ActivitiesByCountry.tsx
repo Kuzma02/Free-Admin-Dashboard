@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: Component that displays single activities by country
+// Name of the component: ActivitiesByCountry.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <ActivitiesByCountry />
+// Input parameters: No input parameters
+// Output: single activities by country
+// *********************
+
 import SingleActivity from "./SingleActivity";
 
 const ActivitiesByCountry = () => {

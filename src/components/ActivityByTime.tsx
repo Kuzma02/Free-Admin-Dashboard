@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: Component that displays single activities by time
+// Name of the component: ActivitiesByTime.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <ActivityByTime />
+// Input parameters: No input parameters
+// Output: single activities by time
+// *********************
+
 import SingleActivity from "./SingleActivity";
 import { FaClock } from "react-icons/fa6";
 import { FaCalendarDay } from "react-icons/fa6";

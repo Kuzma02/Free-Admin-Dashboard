@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: The footer component
+// Name of the component: Footer.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <Footer />
+// Input parameters: No input parameters
+// Output: The footer component
+// *********************
+
 const navigation = [
   {
     name: "Facebook",

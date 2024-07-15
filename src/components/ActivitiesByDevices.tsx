@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: Component that displays single activity by devices
+// Name of the component: ActivitiesByDevices.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <Activities />
+// Input parameters: No input parameters
+// Output: single activities by country
+// *********************
+
 import { FaApple } from "react-icons/fa6"
 import SingleActivity from "./SingleActivity"
 import { FaWindows } from "react-icons/fa6";
