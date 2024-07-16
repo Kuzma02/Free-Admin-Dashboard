@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: Search input component that displays the search input field
+// Name of the component: SearchInput.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <SearchInput />
+// Input parameters: no input parameters
+// Output: SearchInput component that displays the search input field
+// *********************
+
 import { HiOutlineSearch } from "react-icons/hi";
 
 const SearchInput = () => {

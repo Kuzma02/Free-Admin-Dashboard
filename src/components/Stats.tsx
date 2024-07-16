@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: Stats component that displays the balance overview with the new orders, sales, and revenue
+// Name of the component: Stats.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <Stats />
+// Input parameters: no input parameters
+// Output: Stats component that displays the balance overview with the new orders, sales, and revenue
+// *********************
+
 import SingleStats from "./SingleStats";
 
 const Stats = () => {

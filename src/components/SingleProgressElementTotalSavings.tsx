@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: SingleProgressElementTotalSavings component that displays the single progress element with the title, total money, and percentage saved
+// Name of the component: SingleProgressElementTotalSavings.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <SingleProgressElementTotalSavings title="Education" totalMoney={300} percentSaved={50} />
+// Input parameters: roles: { title: string; totalMoney: number; percentSaved: number }
+// Output: SingleProgressElementTotalSavings component that displays the single progress element with the title, total money, and percentage saved
+// *********************
+
 const SingleProgressElementTotalSavings = ({
   title,
   totalMoney,

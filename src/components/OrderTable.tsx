@@ -1,161 +1,21 @@
+// *********************
+// Role of the component: Order table component that displays the orders in a table
+// Name of the component: OrderTable.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <OrderTable />
+// Input parameters: no input parameters
+// Output: OrderTable component that displays the orders in a table
+// *********************
+
 import { nanoid } from "nanoid";
 import { Link } from "react-router-dom";
 import { HiOutlinePencil } from "react-icons/hi";
 import { HiOutlineTrash } from "react-icons/hi";
 import { HiOutlineEye } from "react-icons/hi";
+import { orderAdminItems } from "../utils/data";
 
-const activityItems = [
-  {
-    user: {
-      name: "Brent Fesi",
-      imageUrl: "/src/assets/random user 1.jpg",
-    },
-    status: "Processing",
-    total: "$120",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Benito Nickley",
-      imageUrl: "/src/assets/random user 2.jpg",
-    },
-    status: "Processing",
-    total: "$210",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Lesley Ghouse",
-      imageUrl: "/src/assets/random user 3.jpg",
-    },
-    status: "Processing",
-    total: "$350",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Cherie Kros",
-      imageUrl: "/src/assets/random user 4.jpg",
-    },
-    status: "On hold",
-    total: "$210",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Ivory Volkmar",
-      imageUrl: "/src/assets/random user 5.jpg",
-    },
-    status: "Cancelled",
-    total: "$122",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Assunta Aimes",
-      imageUrl: "/src/assets/random user 6.jpg",
-    },
-    status: "Processing",
-    total: "$13",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Pearle Yousef",
-      imageUrl: "/src/assets/random user 7.jpg",
-    },
-    status: "Completed",
-    total: "$62",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Latoyia Fiscus",
-      imageUrl: "/src/assets/random user 8.jpg",
-    },
-    status: "Completed",
-    total: "$178",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Siu Manak",
-      imageUrl: "/src/assets/random user 9.jpg",
-    },
-    status: "On hold",
-    total: "$312",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Cruz Arciniegas",
-      imageUrl: "/src/assets/random user 10.jpg",
-    },
-    status: "Cancelled",
-    total: "$158",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Ronnie Vondohlen",
-      imageUrl: "/src/assets/random user 11.jpg",
-    },
-    status: "Completed",
-    total: "$109",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Demarcus Fahrenbach",
-      imageUrl: "/src/assets/random user 12.jpg",
-    },
-    status: "Completed",
-    total: "$531",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Latoyia Longcrier",
-      imageUrl: "/src/assets/random user 13.jpg",
-    },
-    status: "Completed",
-    total: "$627",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Dayle Blumreich",
-      imageUrl: "/src/assets/random user 14.jpg",
-    },
-    status: "Completed",
-    total: "$421",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Elfrieda Rowberry",
-      imageUrl: "/src/assets/random user 15.jpg",
-    },
-    status: "Completed",
-    total: "$490",
-    date:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-];
+
 
 const OrderTable = () => {
   return (
@@ -196,7 +56,7 @@ const OrderTable = () => {
         </tr>
       </thead>
       <tbody className="divide-y divide-white/5">
-        {activityItems.map((item) => (
+        {orderAdminItems.map((item) => (
           <tr key={nanoid()}>
             <td className="py-4 pl-4 pr-8 sm:pl-6 lg:pl-8">
               <div className="flex items-center gap-x-4">

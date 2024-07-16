@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: Register component that displays the registration form with email, password, and confirm password fields and buttons for registration with Google and GitHub
+// Name of the component: RegisterComponent.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <RegisterComponent />
+// Input parameters: no input parameters
+// Output: RegisterComponent component that contains input fields for email, password, and confirm password, and buttons for registration with Google and GitHub
+// *********************
+
 import { FaReact } from "react-icons/fa6";
 import { FaGoogle } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";

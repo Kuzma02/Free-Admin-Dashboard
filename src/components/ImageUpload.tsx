@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: The image upload component
+// Name of the component: ImageUpload.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <ImageUpload />
+// Input parameters: No input parameters
+// Output: The upload input component
+// *********************
+
 const ImageUpload = () => {
   return (
     <div className="flex items-center justify-center w-full mt-5">

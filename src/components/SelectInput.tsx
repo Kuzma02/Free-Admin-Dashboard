@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: Select input component that displays the select input field
+// Name of the component: SelectInput.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <InputWithLabel label="Select role"><SelectInput selectList={roles} /></InputWithLabel>
+// Input parameters: roles: { value: string; label: string }[]
+// Output: SelectInput component that displays the select input field
+// *********************
+
 import { nanoid } from "nanoid";
 
 interface TextAreaProps extends React.InputHTMLAttributes<HTMLSelectElement> {

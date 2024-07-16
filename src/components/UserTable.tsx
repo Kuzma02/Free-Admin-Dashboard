@@ -1,161 +1,21 @@
+// *********************
+// Role of the component: User table component that displays the user table with the user name, email address, role, last login date, and actions
+// Name of the component: UserTable.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <UserTable />
+// Input parameters: no input parameters
+// Output: UserTable component that displays the user table with the user name, email address, role, last login date, and actions
+// *********************
+
 import { nanoid } from "nanoid";
 import { Link } from "react-router-dom";
 import { HiOutlinePencil } from "react-icons/hi";
 import { HiOutlineTrash } from "react-icons/hi";
 import { HiOutlineEye } from "react-icons/hi";
+import { userAdminItems } from "../utils/data";
 
-const activityItems = [
-  {
-    user: {
-      name: "Brent Fesi",
-      imageUrl: "/src/assets/random user 1.jpg",
-    },
-    email: "brentfesi@gmail.com",
-    role: "user",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Benito Nickley",
-      imageUrl: "/src/assets/random user 2.jpg",
-    },
-    email: "benitonickley@gmail.com",
-    role: "admin",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Lesley Ghouse",
-      imageUrl: "/src/assets/random user 3.jpg",
-    },
-    email: "lesleyghouse@gmail.com",
-    role: "user",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Cherie Kros",
-      imageUrl: "/src/assets/random user 4.jpg",
-    },
-    email: "cheriekros@hotmail.com",
-    role: "user",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Ivory Volkmar",
-      imageUrl: "/src/assets/random user 5.jpg",
-    },
-    email: "ivoryvolkmar@gmail.com",
-    role: "user",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Assunta Aimes",
-      imageUrl: "/src/assets/random user 6.jpg",
-    },
-    email: "assuntaimes@gmail.com",
-    role: "user",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Pearle Yousef",
-      imageUrl: "/src/assets/random user 7.jpg",
-    },
-    email: "pearleyousef@gmail.com",
-    role: "admin",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Latoyia Fiscus",
-      imageUrl: "/src/assets/random user 8.jpg",
-    },
-    email: "latoyiafiscus@gmail.com",
-    role: "user",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Siu Manak",
-      imageUrl: "/src/assets/random user 9.jpg",
-    },
-    email: "siumanak@gmail.com",
-    role: "user",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Cruz Arciniegas",
-      imageUrl: "/src/assets/random user 10.jpg",
-    },
-    email: "cruzarciniegas",
-    role: "user",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Ronnie Vondohlen",
-      imageUrl: "/src/assets/random user 11.jpg",
-    },
-    email: "ronnie92@gmail.com",
-    role: "user",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Demarcus Fahrenbach",
-      imageUrl: "/src/assets/random user 12.jpg",
-    },
-    email: "demarcus01@gmail.com",
-    role: "user",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Latoyia Longcrier",
-      imageUrl: "/src/assets/random user 13.jpg",
-    },
-    email: "latoyial92@gmail.com",
-    role: "user",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Dayle Blumreich",
-      imageUrl: "/src/assets/random user 14.jpg",
-    },
-    email: "dayleblumreich@gmail.com",
-    role: "user",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-  {
-    user: {
-      name: "Elfrieda Rowberry",
-      imageUrl: "/src/assets/random user 15.jpg",
-    },
-    email: "elfrieda02@gmail.com",
-    role: "user",
-    lastLogin:
-      new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
-  },
-];
+
 
 const UserTable = () => {
   return (
@@ -196,7 +56,7 @@ const UserTable = () => {
         </tr>
       </thead>
       <tbody className="divide-y divide-white/5">
-        {activityItems.map((item) => (
+        {userAdminItems.map((item) => (
           <tr key={nanoid()}>
             <td className="py-4 pl-4 pr-8 sm:pl-6 lg:pl-8">
               <div className="flex items-center gap-x-4">

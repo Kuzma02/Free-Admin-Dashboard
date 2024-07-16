@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: Pagination component that displays the page numbers and navigation buttons
+// Name of the component: Pagination.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <Pagination />
+// Input parameters: no input parameters
+// Output: Pagination component that displays the page numbers and navigation buttons
+// *********************
+
 import { useState } from 'react';
 
 const Pagination = () => {

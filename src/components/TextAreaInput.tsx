@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: Text area input component that displays the text area input field
+// Name of the component: TextAreaInput.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <InputWithLabel label="Category description"><TextAreaInput placeholder="Enter a category description..." rows={4} cols={50} /></InputWithLabel>
+// Input parameters: { rows?: number; cols?: number; placeholder?: string; value?: string; onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void; }
+// Output: TextAreaInput component that displays the text area input field
+// *********************
+
 interface TextAreaProps extends React.InputHTMLAttributes<HTMLTextAreaElement> {
   rows?: number;
   cols?: number;

@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: Rows per page component that displays the number of rows per page
+// Name of the component: RowsPerPage.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <RowsPerPage />
+// Input parameters: no input parameters
+// Output: RowsPerPage component that displays the number of rows per page
+// *********************
+
 const RowsPerPage = () => {
   return (
     <div className="flex gap-2 items-center">

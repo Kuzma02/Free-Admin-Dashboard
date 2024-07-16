@@ -1,3 +1,13 @@
+// *********************
+// Role of the component: The header component
+// Name of the component: Header.tsx
+// Developer: Aleksandar Kuzmanovic
+// Version: 1.0
+// Component call: <Header />
+// Input parameters: No input parameters
+// Output: The header component
+// *********************
+
 import { FaReact } from "react-icons/fa6";
 import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi";
 import { HiOutlineBell } from "react-icons/hi";
