@@ -1,0 +1,18 @@
+services:
+  base:
+    profiles: [none]
+    image: ghcr.io/deanayalon/free-admin-dashboard-fork
+    build: .
+    container_name: free-admin-dashboard
+    hostname: free-admin-dashboard
+
+  standalone:
+    extends: base
+    ports:
+      - 5173:5173
+
+  dev:
+    extends: standalone
+    volumes:
+      - .:/app
+  
