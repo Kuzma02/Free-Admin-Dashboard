@@ -11,4 +11,4 @@ RUN npm i
 EXPOSE 5173
 
 ENTRYPOINT [ "npm", "run" ]
-CMD [ "dev" ]
+CMD [ "dev:docker" ]
