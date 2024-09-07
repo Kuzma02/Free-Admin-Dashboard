@@ -1,7 +1,7 @@
 services:
   base:
     profiles: [none]
-    image: ghcr.io/deanayalon/free-admin-dashboard-fork
+    image: ghcr.io/Kuzma02/Free-Admin-Dashboard
     build: .
     container_name: free-admin-dashboard
     hostname: free-admin-dashboard
