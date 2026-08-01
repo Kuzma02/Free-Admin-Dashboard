@@ -3,7 +3,6 @@
 <p><b>Free admin dashboard</b> is an open-source admin template designed in Figma and developed in React.js, Tailwind CSS and TypeScript. My goal in this project is to deliver a high-quality and premium design dashboard template by following the best React.js practices. This <b>React admin dashboard</b> is created using advanced React.js design patterns like controlled and uncontrolled components design patterns, custom hooks patterns, layout components patterns, component composition patterns, compound components design patterns and many more… This is mainly an eCommerce dashboard template, but in the future if the repository becomes popular, I will expand it to more niches. The dashboard is completely responsive, and it is available for <b>free download</b>.</p>
 
 <h2>More work</h2>
-<a href="https://www.kuzmanovicaleksandar.com" target="_blank">www.kuzmanovicaleksandar.com</a><br />
 <a href="https://github.com/Kuzma02/VSD-Official-Website" target="_blank">Car Parts Company Official Website in Next.js</a><br />
 <a href="https://github.com/Kuzma02/Luxury-Cosmetics-eCommerce-NextJS" target="_blank">Luxury Cosmetics eCommerce Shop in Next.js</a><br />
 <a href="https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS" target="_blank">Electronics eCommerce Shop With Admin Dashboard in Next.js and Node.js</a><br />
